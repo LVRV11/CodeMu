@@ -85,4 +85,102 @@
 // console.log(str[str.length - 1]);
 // console.log(str[str.length - 2]);
 
-// let str = 'abcde';
+// let str = '12345';
+// // let sum = Number(str);
+// console.log (Number(str[0]) + Number(str[1]) + Number(str[2]));
+
+
+// let num = String(12345);
+// console.log (Number(num[0]) + Number(num[1]));
+
+// let num = String(12345);
+// console.log (num[1] * num[2]);
+
+// let num = String(12345);
+// console.log (num[4] + num[3] + num[2] + num[1] + num[0]);
+
+// let num = 47;
+// num += 7;
+// num -= 18;
+// num *= 10;
+// num /= 15;
+// alert(num);
+
+// let num = 10;
+// // num = num + 1;
+// num ++;
+// num ++;
+// num--;
+// // num = num + 1;
+// // num = num - 1;
+// alert(num);
+
+// let num = 0;
+// alert(num++); // выведет 0
+// alert(num);
+
+// let num = 3;
+// alert(++num);
+
+// let num1 = 3;
+// let num2 = ++num1;
+// alert(num1);
+// alert(num2);
+
+// let num1 = 3;
+// let num2 = num1--;
+// alert(num1);
+// alert(num2);
+
+// let num1 = 3;
+// let num2 = --num1;
+// alert(num1);
+// alert(num2);
+
+// let num1 = 3;
+// num1++;
+// let num2 = num1--;
+// alert(num1++);
+// alert(--num2);
+
+// alert(0.1 * 0.2);
+
+// let num1 = +prompt('Введите первое число');
+// let num2 = +prompt('Введите второе число');
+
+// alert(num1 + num2);
+
+// let side = +prompt('Введите первое число');
+// let sideLong = +prompt('Введите первое число');
+
+// alert(2*(side+sideLong));
+
+// document.write(123);
+// document.write('text');
+// document.write('<b>text</b>'); 
+// let str = 'text';
+// document.write('<b>' + str + '</b>');
+// document.write('text <br> text');
+// document.write('text1<br>');
+// document.write('text2<br>');
+// document.write('text3<br>');
+// document.write('text');
+// document.write('<br>');
+// document.write('text');
+// document.write('<I>pushka</I>');
+// let str = 'text';
+// document.write('<I>' + str + '</I>');
+// document.write('1<br>');
+// document.write('2<br>');
+// document.write('3<br>');
+// document.write('4<br>');
+// document.write('5<br>');
+
+// let num1 = 1;
+// let num2 = 2;
+// console.log('сумма: ' + (num1 + num2));
+
+let a = 1;
+let b = 2;
+let c = +prompt ('Vvedite chislo')
+console.log(a + b + c);
