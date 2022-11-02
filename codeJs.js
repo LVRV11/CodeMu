@@ -355,8 +355,72 @@
 
 // __________________________________________OBJECT______________________________________
 
+// let obj = {
+//     1: 'Sunday',
+//     2: 'Monday',
+//     3: 'Tuesday',
+//     4: 'Wedensday',
+//     5: 'Thursday',
+//     6: 'Friday',
+//     7: 'Saturday'
+// };
+// console.log(obj);
+// console.log(obj[1]);
+// console.log(obj[2]);
+// console.log(obj[3]);
+// console.log(obj[4]);
+// console.log(obj[5]);
+// console.log(obj[6]);
+// console.log(obj[7]);
+
+// let obj = {1: 'a', 2: 'b', 3: 'c'};
+// alert(obj);
+// console.log(obj);
+
+// let user = {
+//     'name': 'Dima',
+//     'surname': 'Didi',
+//     'patronymic': 'Fillipovich'
+// };
+// console.log(user);
+// alert (user['name'] + ' ' + user['surname'] + ' ' + user['patronymic']);
+
+// Создайте объект date с ключами 'year', 'month' и 'day' и значениями, 
+// соответствующими текущему дню. Выведите созданную дату на экран в формате год-месяц-день.
+
+// let date = {
+//     'year': 2022,
+//     'month': '05',
+//     'day': 11
+// };
+// alert (date.year + '-' + date.month + '-' + date.day);
+
+// let obj = {
+// 	'1a': 1,
+// 	'b2': 2,
+// 	'с-с': 3,
+// 	'd 4': 4,
+// 	'e5': 5
+// };
+
+// console.log(obj['1a']);
+// console.log(obj.b2);
+// console.log(obj['с-с']);
+// console.log(obj['d 4']);
+// console.log(obj.e5);
 
 
+// let obj = {x: 1, y: 2, z: 3};
+// console.log(obj.x*obj.x);
+// console.log(obj.y*obj.y);
+// console.log(obj.z*obj.z);
+// console.log(obj);
+
+let obj = {};
+obj.a = 'kukla';
+obj.k = 5;
+obj.day = 'Monday';
+console.log(obj);
 
 
 
