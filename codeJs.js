@@ -416,11 +416,81 @@
 // console.log(obj.z*obj.z);
 // console.log(obj);
 
-let obj = {};
-obj.a = 'kukla';
-obj.k = 5;
-obj.day = 'Monday';
-console.log(obj);
+// let obj = {};
+// obj.a = 'kukla';
+// obj.k = 5;
+// obj.day = 'Monday';
+// console.log(obj);
+
+// let obj = {
+//     dayFirst: 'Synday',
+//     dayFour: 'Wensday',
+//     dayTwo: 'Monday'
+// }
+// console.log(obj);
+
+// let kuka = {x: 1, y: 2, z: 3};
+// let key = Object.keys(kuka);
+// console.log(key);
+
+// let obj = {x: 1, y: 2, z: 3};
+// console.log(Object.keys(obj).length);
+
+// let obj = {x: 1, y: 2, z: 3};
+// let key = 'z';
+// console.log(obj[key]);
+
+// let obj = {x: 1, y: 2, z: 3};
+// console.log(obj['x']);
+
+// let obj = {x: 1, y: 2, z: 3};
+// let key = 'x';
+// console.log(obj[key]);
+
+// let obj = {x: 1, y: 2, z: 3};
+
+// let prop = 'x';
+// console.log(obj[prop]);
+
+// let obj = {x: 1, y: 2, z: 3};
+
+// let prop = 'x';
+// console.log(obj[prop]);
+
+// let key = 'a';
+// let obj = {
+// 	[key + '1']: 1,
+// 	[key + '2']: 2,
+// 	[key + '3']: 3
+// };
+// console.log(obj);
+
+// let key = 'x';
+// let obj = {
+// 	[key]: 1,
+// 	y: 2,
+// 	z: 3
+// };
+// console.log(obj);
+
+// let key1 = 'x';
+// let key2 = 'y';
+// let key3 = 'z';
+
+// let obj = {
+// 	[key1]: 1,
+// 	[key2]: 2,
+// 	[key3]: 3
+// };
+
+// console.log(obj);
+
+// let obj = {a: 1, b: 2, c: 3};
+// console.log('b' in obj);
+
+
+
+
 
 
 
