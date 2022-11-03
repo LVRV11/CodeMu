@@ -488,9 +488,48 @@
 // let obj = {a: 1, b: 2, c: 3};
 // console.log('b' in obj);
 
+// let obj = {x: 1, y: 2, z: 3};
+// delete obj.x;
 
+// console.log('x' in obj);
 
+// let obj = {x: 1, y: 2, z: 3};
+// console.log( typeof obj );
+// let obj = {x: 1, y: 2, z: 3};
+// console.log( typeof obj['x'] );
 
+// let arr = [1, 2, 3];
+// console.log( typeof arr[0] );
+
+// let arr = ['1', '2', '3'];
+// console.log( typeof arr[0] );
+
+// console.log( Array.isArray([1, 2, 3]) );
+
+// let test = {x: 1, y: 2, z: 3};
+// console.log(test.x);
+
+// let test1 = [1, 2, 3];
+// let test2 = 1;
+
+// console.log(test1);
+
+// let test1 = [1, 2, 3];
+// let test2 = 1;
+
+// console.log(test1[test2]);
+
+// const arr = ['a', 'b', 'c'];
+// arr = [1, 2, 3];
+// console.log(arr);
+
+// const arr = ['a', 'b', 'c'];
+// arr[1] = '!';
+// console.log(arr);
+
+// const arr = ['a', 'b', 'c'];
+// arr = ['a', 'b', 'c'];
+// console.log(arr);
 
 
 
