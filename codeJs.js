@@ -531,11 +531,46 @@
 // arr = ['a', 'b', 'c'];
 // console.log(arr);
 
+// const arr = [1, 2, 3, 4, 5];
+// const res = arr[1] + arr[2];
+
+// console.log(res);
+
+// let obj = {x: 1, y: 2, z: 3};
+// console.log(Object.keys(obj));
 
 
+// let obj = {x: 1, y: 2, z: 3};
+// let key = 'x';
+// console.log(obj[key]);
+
+// let obj = {x: 1, y: 2, z: 3};
+// let sum = obj['x'] + obj['y'] + obj['z'];
+
+// console.log(sum);
+
+// let obj = {x: 1, y: 2, z: 3};
+// console.log(Object.keys(obj).length);
 
 
+// _______________________________________________IF ELSE_________________________________
 
+// let test1 = 1;
+// let test2 = 2;
+
+// if (test2 == test1) {
+// 	console.log('+++'); 
+// } else {
+// 	console.log('---');
+// };
+
+let num = 3;
+
+if (num > 0 && num < 10) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
 
 
 
