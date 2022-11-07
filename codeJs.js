@@ -564,18 +564,204 @@
 // 	console.log('---');
 // };
 
-let num = 3;
+// let num = 10;
 
-if (num > 0 && num < 10) {
-	console.log('+++');
-} else {
-	console.log('---');
-}
+// if (num >= 10 && num <= 20) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// Проверьте, что переменная num1 равна или меньше 1, а переменная num2 больше или равна 3.
+
+// let num1 = 3;
+// let num2 = 11;
+// if (num1 <= 1 && num2 >= 3) {
+//     	console.log('+++');
+//     } else {
+//     	console.log('---');
+// //     }
+
+// let num = 3;
+
+// if (num > 0 && num < 5 || num > 10 && num < 20) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num1 = 3;
+// let num2 = 5;
+
+// if ( num1 > 0 && (num2 == 3 || num2 == 5) ) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+    
+
+// let num = 3;
+		
+// if (num > 5 && num < 10 || num == 20) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num = 3;
+		
+// if (num > 5 || num > 0 && num < 3) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num = 3;
+		
+// if (num == 9 || num > 10 && num < 20 || num > 20 && num 
+// 	< 30) { 
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test = true;
+
+// if (test == false) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test;
+		
+// if (test == true) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test;
+		
+// if (test == true) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test = true;
+
+// if (test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test = true;
+
+// if (!test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
 
+// let test = true;
 
+// if (test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
+// let test = '';
 
+// if (test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let test = 3 * 'abc';
+
+// if (test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// console.log(test);
+
+// let test;
+
+// if (test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// console.log(test);
+
+// let test = '0';
+
+// if (test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test = 0;
+
+// if (test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test1 = true;
+// let test2 = true;
+
+// if (test1 && test2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+// let test1 = true;
+// let test2 = true;
+
+// if (test1 && !test2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// // }
+// let test1 = true;
+// let test2 = true;
+
+// if (test1  && test2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test1 = true;
+// let test2 = true;
+// let test3 = true;
+
+// if (test1 || !test2 && !test3) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test = '10';
+
+// if (test == 10) {
+// 	console.log('YES');
+// }
+
+// let test = 10;
+
+// // if (test > 0) console.log('+++'); else console.log('---');
+// if (test > 0) console.log('+++');
+	
 
 
 
