@@ -762,7 +762,103 @@
 // // if (test > 0) console.log('+++'); else console.log('---');
 // if (test > 0) console.log('+++');
 	
+// let day = 'frr';
+// if (day <= 10) {
+//     console.log('1 декада');
+// } else if (day <= 20) {
+//     console.log('2 декада');
+// } else if (day <= 31) {
+//     console.log('3 декада');
+// } else {
+//     console.log('Введите число от 1 до 31');
+// }
 
+// let num = 3;
 
+// if (num >= 0) {
+// 	if (num <= 5) {
+// 		console.log('меньше или равно 5');
+// 	} else {
+// 		console.log('больше 5');
+// 	}
+// } else {
+// 	console.log('меньше нуля');
+// }
 
+// let num = String(11);
+// if (num >= 10 && num <= 99){
+// 	console.log(Number(num[0]) + Number(num[1]));	
+// }
 
+// let num = String(11);
+// if (num >= 10 && num <= 99){
+// 	console.log(Number(num[0]) + Number(num[1]));	
+// 	if ((Number(num[0]) + Number(num[1])) < 9) {
+// 		console.log('сумма');
+// 	}
+// }
+
+// let lang = 'ru';
+
+// if (lang == 'ru') {
+// 	console.log('рус');
+// } else if (lang == 'en') {
+// 	console.log('анг');
+// } else if (lang == 'de') {
+// 	console.log('нем');
+// } else {
+// 	console.log('язык не поддерживается');
+// }
+
+// let lang = 'ru';
+// switch (lang) {
+// 	case 'ru':
+// 		console.log('рус');
+// 		break;
+// 	case 'en':
+// 		console.log('анг');
+// 		break;	
+// 	case 'de':
+// 	console.log('нем');
+// 		break;	
+// 		default:
+// 		console.log('язык не поддерживается');	
+// 		break;
+// }
+
+// let num = 1; // пусть здесь число 1
+
+// switch (num) {
+// 	case 1:
+// 		console.log(1); // сработает это
+// 	case 2:
+// 		console.log(2); // сработает и это
+// 	case 3:
+// 		console.log(3); // сработает и это
+// }
+
+// let num = 1;
+// let res;
+
+// switch (num) {
+// 	case 1:
+// 	case 2:
+// 		res = 'a';
+// 	break;
+// 	case 3:
+// 		res = 'b';
+// 	break;
+// }
+
+// console.log(res);
+
+let num = 1;
+let res;
+
+if (num >= 0) {
+	res = '1';
+} else {
+	res = '2';
+}
+
+console.log(res);
