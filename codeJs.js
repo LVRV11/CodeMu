@@ -850,15 +850,32 @@
 // 	break;
 // }
 
+// // console.log(res);
+
+// let num = 1;
+// let res;
+
+// if (num >= 0) {
+// 	res = '1';
+// } else {
+// 	res = '2';
+// }
+
 // console.log(res);
 
-let num = 1;
-let res;
 
-if (num >= 0) {
-	res = '1';
-} else {
-	res = '2';
-}
+// let num = 1;
+// let res = num >= 0 ? res = 1 : res = 2;
+// console.log(res);
 
-console.log(res);
+// let a = 2 * (3 - 1);
+// let b = 6 - 2;
+// console.log(a == b);
+
+// let a = 5 * (7 - 4);
+// let b = 1 + 2 + 7;
+// console.log(a > b);
+
+let a = 2 ** 4;
+let b = 4 ** 2;
+console.log(a != b);
