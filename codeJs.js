@@ -876,6 +876,123 @@
 // let b = 1 + 2 + 7;
 // console.log(a > b);
 
-let a = 2 ** 4;
-let b = 4 ** 2;
-console.log(a != b);
+// let a = 2 ** 4;
+// let b = 4 ** 2;
+// console.log(a != b);
+
+// let ok = confirm('Текст вопроса');
+// console.log(ok);
+
+// let ok = confirm('Текст вопроса');
+
+// if (ok) {
+// 	console.log('вы ответили да');
+// } else {
+// 	console.log('вы ответили нет');
+// }
+
+// Спросите у пользователя, есть ли ему уже 18 лет. Если есть - выведите на экран алерт 
+// с текстом для взрослых, а если нет, выведите сообщение о том, что доступ пользователю запрещен.
+
+// let userAge = confirm('Vam est 18 let?');
+// if (userAge) {
+// 	alert ('pisya');
+// 	console.log('pisya');
+// } else {
+// 	alert ('stop');
+// 	console.log('stop');
+// }
+
+// if (true) {
+// 	let res = '!';
+// }
+
+// console.log(res);
+
+// let age = 17;
+// let adult;
+
+// if (age >= 18) {
+// 	adult = true;
+// } else {
+// 	adult = false;
+// }
+
+// console.log(adult);
+
+// let age = 17;
+// let adult;
+
+// if (age >= 18) {
+// 	adult = true;
+// } else {
+// 	adult = false;
+// }
+
+// console.log(adult);
+
+// let age = 18;
+// let adult;
+
+// if (age >= 18) {
+// 	adult = true;
+// } else {
+// 	adult = false;
+// }
+
+// console.log(adult);
+
+// let age = 17;
+// let res;
+
+// if (age >= 18) {
+// 	if (age <= 23) {
+// 		res = 'от 18 до 23';
+// 	} else {
+// 		res = 'больше 23';
+// 	}
+// } else {
+// 	res = 'меньше 18';
+// }
+
+// console.log(res);
+
+// let age = 12;
+// let res;
+
+// if (age >= 18) {
+
+	
+// 	if (age <= 23) {
+// 		res = 'от 18 до 23';
+// 	} else {
+// 		res = 'больше 23';
+// 	}
+// } else {
+// 	res = 'меньше 18';
+// }
+
+// console.log(res);
+
+// let min = 20;
+
+// if (min >= 0 && min <= 14) {
+// 	console.log('1 четверть');
+// } else if (min >= 15 && min <= 29) {
+// 	console.log('2 четверть');
+// } else if (min >= 30 && min <= 44) {
+// 	console.log('3 четверть');
+// } else if (min >= 45 && min <= 59) {
+// 	console.log('4 четверть');
+// }
+
+// В переменной arr содержится некоторый массив с числами. Напишите условие, которое проверит, 
+// что в массиве 3 элемента. Если это так, выведите на экран сумму элементов массива.
+
+// let arr = [1,2,3,4,5];
+// if (arr.length >=3) {
+// 	console.log(arr[0] + arr[1] + arr[2]);
+// 	console.log(arr.length);
+// }
+
+
