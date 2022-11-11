@@ -993,6 +993,313 @@
 // if (arr.length >=3) {
 // 	console.log(arr[0] + arr[1] + arr[2]);
 // 	console.log(arr.length);
+// // }
+
+// let name = 'Dima';
+// if (name[0] !== 'a') {
+// 	console.log('!');
+// } else {
+// 	console.log('-');
+// }
+
+// Дана переменная, содержащая некоторую строку. 
+// Проверьте, что эта строка заканчивается на символ 'x'.
+
+// let name = 'Dima';
+// if (name.Lenght - 1 == 'a') {
+// 	console.log('!');
+// } else {
+// 	console.log('-');
+// }
+
+// Дана переменная, содержащая некоторую строку. 
+// Проверьте, что эта строка начинается на символ 'a' или символ 'b'.
+
+// let name = 'Dima';
+// if (name[0] == 'a' || name[0] == 'b') {
+// 	console.log('!');
+// } else {
+// 	console.log('-');
+// }
+
+// Дано целое число. Напишите условие, которое проверит, равна ли последняя цифра этого числа нулю.
+
+// let num = 11230;
+// let newNum = String(num);
+
+// if (newNum[newNum.length -1] == '0') {
+// 		console.log('ravna 0');
+// 	} else {
+// 		console.log('+');
+// 	}
+// 	console.log(newNum);
+
+// Пусть в переменной num хранится число. Определите, четное число или нет. 
+// Число будет четным, если последний символ равен 0, 2, 4, 6 или 8, и нечетным в противном случае.
+
+// let num = 55;
+// let newNum = String(num);
+
+// if (newNum[newNum.length -1] == '0,2,4,6,8') {
+// 		console.log('chetnoe');
+// 	} else {
+// 		console.log('ne');
+// 	}
+// 	console.log(newNum);
+
+
+// Как известно, четные числа делятся на 2 без остатка, а нечетные - с остатком. Пусть у вас дано число. 
+// С помощью оператора % и конструкции if проверьте четное это число или нет.
+
+// let num = 10;
+// let numCh = 2;
+
+// if (num % numCh === 0) {
+// 		console.log('chetnoe');
+// 	} else {
+// 		console.log('ne');
+// 	}
+
+// let num = 10;
+// let numCh = 3;
+
+// if (num % numCh === 0) {
+// 		console.log('del');
+// 	} else {
+// 		console.log('ne del ostatok ' + num%numCh );
+// 	}
+	
+// let num1 = 1;
+// let num2 = 2;
+
+// if (num1 + num2 == 3) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num1 = '1';
+// let num2 = '2';
+
+// if (Number(num1) + Number(num2) == 3) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num1 = '1';
+// let num2 = '2';
+
+// if (Number(num1) + Number(num2) === 3) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num = 123;
+
+// if (String(num)[0] == '1') {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num = 123;
+
+// if (String(num)[0] == 1) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num = 123;
+
+// if (String(num)[0] == 1) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num = 123;
+// let first = String(num)[0];
+
+// if (first === '1') {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num = 12;
+// let numAge = String(num);
+
+// if (numAge.length === 2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num = 12;
+
+
+// if (String(num).length === 2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num = 12;
+// let str = String(num);
+
+// if (str.length === 2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num = 12;
+
+// if (String(num).length === 2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num = 12;
+
+// if (String(num).length == String(2)) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num = 12;
+
+// if (String(num).length === 2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num = Number('123033'); // берем в кавычки, чтобы обращаться к цифрам 
+
+// let sum1 = num[0] + num[1] + num[2];
+// let sum2 = num[3] + num[4] + num[5];
+
+// if (sum1 == sum2) {
+// 	console.log('суммы равны');
+// } else {
+// 	console.log('суммы не равны');
+// }
+
+// В переменной month лежит какое-то число из интервала от 1 до 12. 
+// Определите в какую пору года попадает этот месяц (зима, лето, весна, осень).
+
+// let month = 4;
+// if (month >=12 && month <=2) {
+// 	console.log('Zima');
+// } else if (month >=3 && month <=5) {
+// 	console.log('Vesna');
+// } else if (month >=6 && month <=8) {
+// 	console.log('Leto');
+// } else if (month >=9 && month <=11) {
+// 	console.log('Osen');
+// } else {
+// 	console.log('vvedite chislo ot 1-12');
+// }
+	
+// Дана строка, состоящая из символов, например, 'abcde'. 
+// Проверьте, что первым символом этой строки является буква 'a'. 
+// Если это так - выведите 'да', в противном случае выведите 'нет'.
+
+// let month = 'abcde';
+// if (month[0] == 'a') {
+// 	console.log('da');
+// }  else {
+// 	console.log('net');
+// }	
+
+// Дано число, например, 12345. Проверьте, что первым символом этого числа является цифра 1, 2 или 3. 
+// Если это так - выведите 'да', в противном случае выведите 'нет'.
+
+// let num = 12345;
+// let numNew = String(num);
+
+// if (numNew.length[0] == 1 || numNew.length[0] == 2 || numNew.length[0] == 3) {
+// 	console.log('da');
+// }  else {
+// 	console.log('net');
+// }
+// console.log(numNew);
+
+// let num = 12345;
+// let newNum = String(num);
+
+// if (newNum[0] == 3 || newNum[0] == 1 || newNum[0] == 2) { 
+// 	console.log('da');
+// }  else {
+// 	console.log('net');
+// }
+
+
+
+// let num = Number('123033'); // берем в кавычки, чтобы обращаться к цифрам 
+
+// let sum1 = num[0] + num[1] + num[2];
+// let sum2 = num[3] + num[4] + num[5];
+
+// if (sum1 == sum2) {
+// 	console.log('суммы равны');
+// } else {
+// 	console.log('суммы не равны');
+// }
+ 
+// let num = 123;
+// let sum = String(num);
+// console.log(+sum[0] + +sum[1] + +sum[2]);
+
+// Дано число из 6-ти цифр. 
+// Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. 
+// Если это так - выведите 'да', в противном случае выведите 'нет'.
+
+// let num = '123033'; 
+
+// let sum1 = +num[0] + +num[1] + +num[2];
+// let sum2 = +num[3] + +num[4] + +num[5];
+// if (sum1 == sum2) {
+// 	console.log('da');
+// } else {
+// 	console.log('net');
+// }
+
+// __________________________________ЦЫКЛЫ________________________________________________
+
+// for (let i = 1; i <=100; i++) {
+//     console.log(i);
+// }
+
+// for (let i = 1; i <=99; i += 2) {
+//     console.log(i);
+// }
+
+// for (let i = 100; i >=20; i--) {
+//     console.log(i);
+// }
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// for (let elem of arr){
+//     console.log(elem);
+// }
+
+// let obj = {x: 1, y: 2, z: 3};
+// for (let key in obj) {
+//     console.log(key);
+//     console.log(obj[key]);
+// }
+
+// let num = 1;
+// while (num <=100) {
+//     console.log(num);
+//     num++;
 // }
 
 
