@@ -1302,4 +1302,87 @@
 //     num++;
 // }
 
+// let num = 1;
+// while (num <=33) {
+//     console.log(num);
+//     num++; 
+// }
+
+// Дано число num с неким начальным значением. Умножайте его на 3 столько раз, пока результат 
+// умножения не станет больше 1000. 
+// Какое число получится? Посчитайте количество итераций, необходимых для этого.
+
+// let num = 2;
+
+// while (num <= 1000) {
+//     console.log(num);
+//     num *= 3;
+//     // console.log(num);
+// }
+// console.log(num);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+    
+// }
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// for (let i = 1 ; i < arr.length; i++){
+//     console.log(arr[i]);
+// }
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// for (let i = arr.length -2; i > 0; i--){
+//         console.log(arr[i]);
+//     }
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// for (let i = arr.length-1; i >=0; i--){
+//             console.log(arr[i]);
+//         }
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+		
+// for (let i = 0; i < arr.length; i++) {
+// 	console.log(arr[i]);
+// }
+
+// let arr = [2, 5, 9, 15, 1, 4];
+// for (let elem of arr){
+//     if(elem > 3 && elem < 10){
+//         console.log(elem);
+//     }
+// }
+
+// let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
+// for (let key in obj){
+//     if (obj[key]%2){
+//         console.log(obj[key]);
+//     }
+// }
+
+// let res = 0;
+
+// for (let i = 2; i <= 100; i +=2) {
+// 	res += i;
+// }
+// console.log(res);
+
+// let res = 0;
+
+// for (let i = 1; i <= 100; i +=2) {
+// 	res = res + i;
+// }
+
+// console.log(res);
+
+// let res = 1;
+// for (let i = 1; i <=20; i++){
+//     res *= i;
+// }
+// console.log(res);
+
+
+
 
