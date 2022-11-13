@@ -1383,6 +1383,200 @@
 // }
 // console.log(res);
 
+// let arr = [2, 5, 9, 3, 1, 4];
+// let res = 0;
+
+// for (let elem of arr){
+//     res += elem;
+// }
+
+// console.log(res);
+
+// let arr = [2, 5, 9, 3, 1, 4];
+// let res = 0;
+
+// for (let elem of arr){
+// if (elem % 2 === 0) {
+//     res += elem;
+// }   
+// }
+
+// console.log(res);
+
+
+// let arr = [2, 5, 9, 3, 1, 4];
+// let res = 0;
+
+// for (let elem of arr){
+//     res += elem**2;
+// }
+
+// console.log(res);
+
+// let arr = [2, 5, 9, 3, 1, 4];
+// let res = 1;
+
+// for (let elem of arr){
+//     res *= elem;
+// }   
+// console.log(res);
+
+// let arr = [2, 5, 9, 3, 1, 4];
+// let res = 1;
+
+// for (let elem of arr){
+//     res *= elem;
+// }
+// console.log(res);
+
+// С помощью цикла сформируйте строку, заполненную 5-тью дефисами.
+
+// let str = '';
+
+// for (let i = 1; i <= 5; i++){
+//     str += '-'
+// }
+// console.log(str);
+
+// С помощью цикла сформируйте строку '123456789'.
+
+// let str = '';
+
+// for (let i = 1; i <= 9; i++){
+//     str += i
+// }
+// console.log(str);
+
+// let str = '';
+
+// for (let i = 9; i > 0; i--){
+//     str += i
+// }
+// console.log(str);
+
+//  let str = '';
+
+// for (let i = 1; i <= 9; i++){
+//     str += i + '-';
+// }
+// console.log(str);\
+
+
+
+
+// Дан массив с числами. Найдите сумму элементов, 
+// расположенных от начала массива до первого отрицательного числа.
+
+// let res = 0;
+// let arr = [1, 2, 3, -4, -5];
+// for (let elem of arr){
+//     if (elem < 0) {
+//         break;
+//     }
+//     res += elem;
+// }
+// console.log(res); 
+
+// Дан массив с числами. Запустите цикл, который будет по очереди выводить элементы этого !!!!!!!!!!!!!!!!!!
+// массива в консоль до тех пор, пока не 
+// встретится элемент со значением 0. После этого цикл должен завершить свою работу.
+
+// let arr = [1, 2, 3, 4, 7, 0, 8];
+// for (let elem of arr){
+//     console.log(elem);
+//     if (elem === 0){
+//         break;
+//     }
+//     }
+
+// Дан массив с числами. Найдите позицию первого числа 3 в этом массиве 
+// (считаем, что это число обязательно есть в массиве).
+
+// let arr = [1, 2, 3, 4, 7, 3, 8];
+// for (let elem of arr){
+//     console.log(elem);
+//     if (elem === 3){
+//         break;
+//     }; 
+// }
+
+// Определите, сколько целых чисел, начиная с числа 1, 
+// нужно сложить, чтобы сумма получилась больше 100.
+
+// let res = 0;
+
+// for (let i = 0; i <= 100; i++){
+//     res += i;
+//     if (res >= 100){
+//         console.log(i);
+//         break;
+//     }
+// } 
+// console.log(res);
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// for (let elem of arr) {
+// 	let result;
+	
+// 	if (elem % 2 == 0) {
+// 		result = elem * elem;
+// 	} else if (elem % 3 == 0) {
+// 		result = elem * elem * elem;
+// 	} else {
+// 		continue; // перейдем на новую итерацию цикла
+// 	}
+	
+// 	console.log(result); // выполнится, если делится на 2 или 3
+// }
+
+// for (let i =1; i <=9; i++){
+//     for (let j =1; j<=3; j++){
+//         document.write(i);
+//     }
+// }
+
+// С помощью двух вложенных циклов выведите на экран следующую строку:
+// 11 12 13 21 22 23 31 32 33
+
+// let res = ' ';
+// for (let i =1; i <=3; i++){
+//     for (let j =1; j<=3; j++){  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//         res += i;   
+//         document.write(res);
+//     }
+// }
+// let arr = [];
+// for (let i = 1; i<=10; i++){
+//     arr.push(i);
+// }
+// console.log(arr);
+
+// let arr = [];
+// for (let i = 1; i <=10; i++){
+//     arr.push('x');
+// }
+// console.log(arr);
+
+// Дан массив с числами. Переберите его циклом и запишите в новый массив только положительные из чисел.
+// let arr = [1, 3, 6, -2, 9];
+// let newArr = [];
+ 
+// for (let elem of arr){
+//      if (elem>0){
+//         newArr.push(elem);
+//      }
+// }
+// console.log(newArr);
+
+// let arr = [1, 3, 6, -2, 9];
+// let newArr = [];
+// for (let i = 0; i < arr.length; i++){
+//     if (i>0){
+//         newArr.push(i);
+//     }  
+// }
+// console.log(newArr);
 
 
 
