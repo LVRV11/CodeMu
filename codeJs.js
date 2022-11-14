@@ -1638,6 +1638,84 @@
 // for (let key in obj){
 //         console.log(obj2 = (obj[key]%2===0));
 // }
-
+ // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // Переберите этот объект циклом и создайте новый объект так, 
 // чтобы его ключами стали элементы старого объекта, а значениями - ключи старого объекта.
+// let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
+// let obj2 =  {};
+// let (let key in obj){
+//     obj2[key] += obj[key];
+//     console.log(obj2);
+// }
+
+// let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
+// const result = {}
+
+// Object.entries(obj).forEach(([key, value]) => {
+//   result[value] = key
+// })
+
+// console.log(result)
+    
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    // let obj = {a: 1, b: 2, c: 3};
+    // for (let key in obj) {
+    //     obj[key] = obj[key] * 2;
+    // }
+    // console.log(obj);
+
+    // Переберите этот объект циклом и возведите каждый элемент этого объекта в квадрат.
+    // let obj = {x: 1, y: 2, z: 3};
+    // for (let key in obj){
+    //     obj[key] *= obj[key];
+    // }
+    // console.log(obj);
+
+    // let obj = {x: 1, y: 2, z: 3};
+    // for (let key in obj){
+    //     obj[key] += 1;
+    // }
+    // console.log(obj);
+
+
+// let arr = [1, 2, 3, 4, 5];
+// let flag = false;
+
+// for (let elem of arr) {
+// 	if (elem == 3) {
+// 		flag = true;
+// 		break;
+// 	}
+// }
+
+// if (flag === true) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// let flag = false;
+
+// for (let elem of arr){
+//     if (elem == 'c'){
+//         flag = true;
+//         break;
+//     }
+//     if (flag===true){
+//         	console.log('+++');
+//     } else {
+// 	        console.log('---');
+//     }
+// }
+
+// let n = 10;
+// nextPrime:
+// for (let i = 2; i<=10; i++){
+//     for (let j = 2; j<i; j++){
+//         if (i%j==0) continue nextPrime ;
+        
+//         console.log(i);
+//     }
+// }
