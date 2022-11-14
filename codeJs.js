@@ -1719,3 +1719,69 @@
 //         console.log(i);
 //     }
 // }
+// let arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+// let counter = 0;
+
+// for (let elem of arr){
+//     if (elem == 3 || elem == 2){
+//         counter++;
+//     }
+    
+// }
+// console.log(counter);
+
+// let arr = ['a', 'b', 'c', 'a', 'a', 'b'];
+// let obj = {};
+
+// for (let elem of arr){
+//     if (obj[elem] === undefined){
+//         obj[elem] = 1;
+//     } else {
+//         (obj[elem]++);
+//     }
+// }
+// console.log(obj);
+// let arr = [1, 2, 3, 4, 5];
+// for (let i = 0; i < arr.length; i++) {
+// 	console.log(arr[i - 1]);
+// }
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// for (let i = 0; i < arr.length-1; i++){
+//     console.log(arr[i] + arr[i + 1]);
+// }
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// for (let i = 0; i < arr.length-1; i++){
+//     console.log(arr[i] + arr[i + 1]);
+// }
+
+// Дан массив с числами. Переберите его циклом и в каждой итерации цикла выведите сумму предыдущего, 
+// текущего и следующего элементов массива.
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// for (let i = 1; i < arr.length-1; i++){
+//     console.log(arr[i] + arr[i - 1] + arr[i + 1]);
+// }
+
+// Возьмите из этого массива те элементы, у которых первая цифра 1 или 2, и найдите их сумму.
+// let arr = [10, 20, 30, 40, 21, 32, 51];
+// let sum = 0;
+
+// for (let elem of arr){
+// if (elem <= 29){
+//     sum += elem;
+// }
+// }
+// console.log(sum);
+
+// let obj = {a: 10, b: 20, c: 30, d: 40, e: 50};
+// let sum = 0;
+
+// for (let elem in obj) {
+// 	if (obj[elem] > 0 && obj[elem] < 21) {
+// 		sum += obj[elem];
+// 	}
+// }
+
+// console.log(sum);
