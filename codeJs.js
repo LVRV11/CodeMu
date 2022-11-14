@@ -1578,5 +1578,66 @@
 // }
 // console.log(newArr);
 
+// let arr = [1, 2, 3, 4, 5];
+
+// for (let i = 0; i < arr.length; i++) {
+// 	arr[i] = arr[i] * 2;
+// }
+
+// console.log(arr); // выведет [2, 4, 6, 8, 10]
+
+// let arr = [1, 8, 3, 7, -5];
+// for (let i = 0; i < arr.length; i++){
+//     arr[i] *= arr[i];
+// }
+// console.log(arr);
+
+// let arr = [1, 8, 3, 7, -5];
+// for (let i = 0; i < arr.length; i++){
+//     arr[i] -=1;
+// }
+// console.log(arr);
+
+// let arr = [1, 8, 3, 7, -5];
+// for (let i = 0; i < arr.length; i++){
+//     arr[i] +=10;
+// }
+// console.log(arr);
+
+// let keys = ['a', 'b', 'c', 'd', 'e'];
+// let values = [1, 2, 3, 4, 5];
+// let obj = {};
+
+// for (let i = 0; i <= 4; i++) {
+// 	obj[keys[i]] = values[i];
+// }
+
+// console.log(obj);
+
+// let arr1 = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+// let arr2 = [1, 2, 3, 4, 5, 6, 7];
+// let obj = {};
+
+// for (let i = 0; i <= 7; i++){
+//     obj[arr1[i]]=arr2[i];
+// }
+// console.log(obj);
 
 
+// let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
+// let obj2 =  {};
+// for (let key in obj){
+//     if (obj[key]%2===0){
+//         console.log(obj2 = (obj[key]));
+//     }
+// }
+
+
+// let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
+// let obj2 =  {};
+// for (let key in obj){
+//         console.log(obj2 = (obj[key]%2===0));
+// }
+
+// Переберите этот объект циклом и создайте новый объект так, 
+// чтобы его ключами стали элементы старого объекта, а значениями - ключи старого объекта.
