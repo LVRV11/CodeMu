@@ -2311,12 +2311,138 @@
 // console.log(arr);
 // 111!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-let arr = [];
+// let arr = [];
 
-for (let i = 0; i < 3; i++) {
-	for (let j = 1; j <= 5; j++) {
-		arr[i].push(j);
-	}
-}
+// for (let i = 0; i < 3; i++) {
+//     arr[i]=[];
+// 	for (let j = 1; j <= 5; j++) {
+// 		arr[i].push(j);
+// 	}
+// }
 
-console.log(arr);
+// console.log(arr);
+
+// let arr = [];
+
+// for (let i = 0; i < 3; i++) {
+// 	arr[i] = [];
+	
+// 	for (let j = 1; j <= 5; j++) {
+// 		arr[i].push(j);
+// 	}
+// }
+
+// console.log(arr);
+
+// let arr = [];
+
+// for (let i = 0; i < 3; i++) {
+// 	arr[i]=[];
+	
+// 	for (let j = 1; j <= 5; j++) {
+// 		arr[i].push(j);
+// 	}
+// }
+
+// console.log(arr);
+
+// let arr = [];
+
+// for (let i = 0; i < 3; i++) {
+// 	arr[j] = [];
+	
+// 	for (let j = 1; j <= 5; j++) {
+// 		arr[i].push(j);
+// 	}
+// }
+
+// console.log(arr);
+
+// let arr = [];
+
+// for (let i = 0; i < 3; i++) {
+// 	arr[i] = [];
+	
+// 	for (let j = 1; j <= 5; j++) {
+// 		arr[i].push(j);
+// 	}
+// }
+
+// console.log(arr);
+
+// let arr = [];
+
+// for (let i = 0; i < 3; i++) {
+// 	arr[i] = [];
+	
+// 	for (let j = 1; j <= 5; j++) {
+// 		arr[i].push(j);
+// 	}
+// }
+
+// console.log(arr);
+// let arr = [];
+// let k = 1;
+
+// for (let i = 0; i < 3; i++) {
+// 	arr[i] = [];
+	
+// 	for (let j = 0; j < 3; j++) {
+// 		arr[i].push(k++);
+// 	}
+// }
+
+// console.log(arr);
+
+// [[1, 2], [3, 4], [5, 6], [7, 8]]
+// let arr = [];
+// let k = 1;
+
+// for (let i = 0; i < 4; i++){
+//     arr[i]=[];
+
+// for ( let j = 0; j < 2; j++){
+//     arr[i].push(k++);
+// }
+// }
+// console.log(arr);
+
+// [[2, 4, 6], [8, 10, 12], [14, 16, 18], [20, 22, 24]]
+
+// let arr = [];
+// let k = 0;
+
+// for(let i = 0; i < 4; i++){
+//     arr[i]=[];
+//     for (let j = 0; j < 3; j++){
+//         // if ([k] % 2 == 0);{
+//             arr[i].push(++k+k);
+            
+//         // }
+//     }
+// }
+// console.log(arr);
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// // Сформируйте с помощью трех вложенных циклов следующий трехмерный массив:
+
+// // [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+
+// let arr = [];
+// let p = 1;
+
+// for (let i = 0; i < 1; i++){
+//     arr[i] = [];
+//     // console.log([i]);
+//     for (let j = 0; j < 4; j++){
+//         arr[i].push[i];
+//         for (let k = 0; k < 2; k++){
+//             arr[i].push[p++];
+//         }
+//     }
+// }
+// console.log(arr);
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
