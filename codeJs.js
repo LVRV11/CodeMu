@@ -3013,5 +3013,55 @@
 // affairs[dataS].push('data101', 'data102');
 // console.log(affairs);
 
+// let students = {
+// 	'group1': {
+// 		'subgroup11': ['student111', 'student112', 'student113'],
+// 		'subgroup12': ['student121', 'student122', 'student123'],
+// 	},
+// 	'group2': {
+// 		'subgroup21': ['student211', 'student212', 'student213'],
+// 		'subgroup22': ['student221', 'student222', 'student223'],
+// 	},
+// 	'group3': {
+// 		'subgroup31': ['student311', 'student312', 'student313'],
+// 		'subgroup32': ['student321', 'student322', 'student323'],
+// 	},
+// };
+
+// // Добавьте нового студента в подгруппу 'subgroup11'.
+// students.group1.subgroup11.push('student555');
+// // console.log(students.group1.subgroup11);
+// // Добавьте в первую группу еще одну подгруппу.
+// students.group1.subgroup13 = [] ;
+// // students.group1.push('subgroup13');
+// // console.log(students.group1);
+// // Сделайте четвертую группу, в ней сделайте подгруппу и добавьте в нее двух новых студентов.
+// students.group4 = {} ;
+// students.group4.subgroup41 = [] ;
+// students.group4.subgroup41.push('student41','student42',);
+// console.log(students.group4);
 
 
+// Возведите 2 в 10 степень.
+// let n = 2;
+// console.log(n**10);
+// console.log(Math.pow(2, 10));
+
+// // Найдите квадратный корень из 245.
+// let n = 245;
+// console.log(Math.sqrt(n));
+
+// let arr = [4, 2, 5, 19, 13, 0, 10];
+// let sum = 0;
+// // Найдите квадратный корень из суммы кубов его элементов. Для решения воспользуйтесь циклом for.
+// for(let i = 0; i < arr.length; i++){
+//     sum = Math.pow(arr[i], 3);
+// }
+// console.log(sum);
+// console.log(Math.sqrt(sum));
+
+// Метод Math.round выполняет округление до ближайшего целого числа по правилам математического округления.
+Метод Math.ceil производит округление дробного числа до целого всегда в большую сторону.
+Метод Math.floor производит округление числа до целых всегда в меньшую сторону.
+Метод toFixed производит округление числа до указанного знака в дробной части.
+Количество знаков указывается параметром.
