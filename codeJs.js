@@ -3061,7 +3061,229 @@
 // console.log(Math.sqrt(sum));
 
 // Метод Math.round выполняет округление до ближайшего целого числа по правилам математического округления.
-Метод Math.ceil производит округление дробного числа до целого всегда в большую сторону.
-Метод Math.floor производит округление числа до целых всегда в меньшую сторону.
-Метод toFixed производит округление числа до указанного знака в дробной части.
-Количество знаков указывается параметром.
+// Метод Math.ceil производит округление дробного числа до целого всегда в большую сторону.
+// Метод Math.floor производит округление числа до целых всегда в меньшую сторону.
+// Метод toFixed производит округление числа до указанного знака в дробной части.
+// Количество знаков указывается параметром.
+// Метод toPrecision округляет число до заданного знака. 
+// В отличие от Math.round округление можно проводить не только в дробной части.
+
+
+// Найдите квадратный корень из 379. Результат округлите до целых, до десятых, до сотых.
+// let n = 379;
+// let res = Math.sqrt(n);
+// console.log(Math.sqrt(n));
+// console.log(Math.round(res));
+// console.log(res.toFixed(1));
+// console.log(res.toFixed(2));
+
+// Найдите квадратный корень из 587. Округлите результат в большую и меньшую стороны, 
+// запишите результаты округления в объект с ключами 'floor' и 'ceil'.
+
+// let n = 587;
+// let res = Math.sqrt(n);
+// let obj = {};
+// console.log(Math.sqrt(n));
+// obj.ceil = Math.ceil(res);
+// obj.floor= Math.floor(res);
+// console.log(obj);
+
+// Метод Math.max возвращает максимальное число из группы чисел, переданных в функцию.
+// По умолчанию функция не работает с массивами, однако с помощью хитрого приема можно найти максимальное значение массива: 
+// Math.max.apply(null, arr), где arr - произвольный массив.
+
+// let arr = [1, 5, 10, 34, 100];
+// let max = Math.max.apply(null, arr);
+
+// console.log(max);
+// Результат выполнения кода: 100
+
+// Метод Math.min возвращает минимальное число из группы чисел
+
+// console.log(Math.min(40, 20, 42, 100, 67));
+
+// let arr = [40, 20, 42, 100, 67];
+// let min = Math.min.apply(null, arr);
+
+// console.log(min);
+
+// Даны числа 4, -2, 5, 19, -130, 0, 10. Найдите минимальное и максимальное число.
+// console.log(Math.max(4, -2, 5, 19, -130, 0, 10));
+// console.log(Math.min(4, -2, 5, 19, -130, 0, 10));
+
+// Получение случайного дробного числа между min и max:
+
+// function getRandomArbitary(min, max) {
+// 	return Math.random() * (max - min) + min;
+// }
+// Получение случайного целого числа между min и max:
+
+// function getRandomInt(min, max) {
+// 	return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// function getRandomInt(min, max) {
+// 	return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// console.log(getRandomInt(10, 100));
+
+// Выведите на экран случайное целое число от 1 до 100.
+// function getRandomInt(min, max) {
+// 	return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// console.log(getRandomInt(0, 100));
+
+// С помощью цикла заполните массив 10-ю случайными целыми числами.
+// let arr = [];
+// for(let i = 0; i < 10; i++){
+//     function getRandomInt(min, max) {
+//         	return Math.floor(Math.random() * (max - min + 1)) + min;
+//         }
+//         arr.push(getRandomInt(1, 100));
+      
+// }
+// console.log(arr);
+
+// console.log(Math.abs(-3));
+
+// Даны переменные a и b. Найдите модуль разности a и b. 
+// Проверьте работу скрипта самостоятельно для различных a и b.
+
+// let a = 10;
+// let b = 3;
+// let c = a - b;
+// let d = b - a;
+// console.log(Math.abs(c));
+// console.log(Math.abs(d));
+
+// let str = 'js';
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+
+// let str = 'abcde';
+// let sub = str.substr(0, 3);
+// Первый параметр задает номер символа, с которого метод начинает 
+// отрезать (учтите, что нумерация с нуля), а второй параметр - сколько символов отрезать.
+
+// console.log(sub);
+// Результат выполнения кода:
+
+// 'abc'
+
+// let str = 'abcde';
+// let sub = str.substring(0, 3);
+// Первый параметр задает номер символа, с которого метод начинает отрезать 
+// (учтите, что нумерация с нуля), а второй параметр - номер символа, на котором следует закончить вырезание
+
+// console.log(sub);
+// Результат выполнения кода (символ с номером 3 не включится в вырезанную часть):
+
+// 'abc'
+
+
+// let str = 'abcde';
+// let sub = str.slice(1, 3);
+
+// console.log(sub);
+// Результат выполнения кода (символ с номером 3 не включится в вырезанную часть):
+
+// 'bc'
+
+// Дана строка 'я учу javascript!'. Вырежьте из нее слово 'учу' и слово 'javascript' 
+// тремя разными способами (через substr, substring, slice).
+
+// let str = 'я учу javascript!'
+// // let sub = str.substr(2, 4);
+// // let sub = str.substring(2, 5);
+// let sub = str.slice(2, 5);
+// console.log(sub);
+
+// let str = 'Я учу учу Javascript';
+// console.log(str.indexOf('учу'));
+// Результат выполнения кода:
+
+// 2
+
+// let str = 'Б..Б..Б';
+// console.log(str.lastIndexOf('Б'));
+// Результат выполнения кода:
+
+// 6
+
+// Дана строка 'abcde'. Определите позицию буквы 'c' в этой строке.
+// let str = 'abcdeahttp://';
+// // console.log(str.indexOf('c'));
+// // // console.log(str.indexOf('a'));
+// // // console.log(str.indexOf('a',0));
+// // console.log(str.indexOf('e'));
+// // console.log(str.lastIndexOf('a',5));
+// // Дана строка. Проверьте, начинается ли эта строка на 'http://'.
+// console.log(str.lastIndexOf('http://',5));
+// console.log(str.startsWith('http://'));
+// console.log(str.endsWith('http://'));
+
+// let str = '1-2-3-4-5';
+
+// console.log(str.split('-'));
+// let str = '12345';
+// console.log(str.split(''));
+
+// let arr = [1, 2, 3];
+// let str = arr.join('-');
+
+// console.log(str);
+// Результат выполнения кода:
+
+// '1-2-3'
+// let date = '2025-12-31';
+
+// let result = date.split('-').reverse().join('.');
+// console.log(result);
+// Результат выполнения кода:
+
+// '31.12.2025'
+
+// let arr = [1, 2, 3, 4, 5];
+// console.log(arr.join('-'));
+
+// let arr = [1, 2, 3];
+// // arr.push(4,6);
+// arr.unshift(4, 'f')
+// console.log(arr);
+
+// let arr = [1, 2, 3];
+// // let res = arr.shift();
+// let res = arr.pop();
+// console.log(res);
+
+// let arr = [1, 2, 3, 4, 5];
+// let newArr = arr.slice(3)
+// console.log(newArr);
+
+// массив.splice(откуда удаляем, сколько элементов удаляем, [вставить элемент], [вставить элемент]...);
+// let arr = [1, 2, 3, 4, 5];
+// // console.log(arr.splice(1,2));
+// // console.log(arr);
+// // console.log(arr.splice(2,0,'a', 'b', 'c'));
+// arr.splice(1,0,'a', 'b',);
+// arr.splice(6,0,'c');
+// arr.push('e');
+// console.log(arr);
+
+// [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e']
+
+// let arr = [1, 2, 3, 4, 5];
+// // console.log(arr.indexOf(3));
+// console.log(arr.includes(3));
+
+let str = 'london';
+
+// let result = str.slice(0, 1).toUpperCase() + str.slice(1);
+// let result = str.slice(0, -1) + str.slice(-1).toUpperCase();
+// let result = str.slice(0, 2).toUpperCase() + str.slice(2);
+// console.log(result); // выведет 'London'
+
+let str = 'London';
+console.log(str.toLowerCase());
