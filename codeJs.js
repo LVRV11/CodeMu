@@ -3302,10 +3302,118 @@
 // let result = words.join(' ');
 // console.log(result); // выведет 'Word1 Word2 Word3'
 
-let str = 'word1 word2 word3';
-let arr = str.split(' ');
-for( let i = 0; i < arr.length;i++){
-    arr[i]=arr[i].slice(0,1).toUpperCase() + arr[i].slice(1);
+// let str = 'word1 word2 word3';
+// let arr = str.split(' ');
+// for( let i = 0; i < arr.length;i++){
+//     arr[i]=arr[i].slice(0,1).toUpperCase() + arr[i].slice(1);
+// }
+// let res = arr.join(' ');
+// console.log(res);
+
+// Преобразуйте строку 'var_test_text' в 'VarTestText'.
+// Написанный код должен работать для любых строк такого типа 
+// (то есть для строк, в которых слова разделены символов подчеркивания).
+
+// let str = 'var_test_text';
+// let arr = str.split('_');
+// // console.log(arr);
+// for(let i = 0; i < arr.length; i++){
+//     arr[i] = arr[i].slice(0,1).toUpperCase() + arr[i].slice(1);
+// }
+// let res = arr.join('');
+// console.log(res);
+
+// let str = 'Хлеб, печенье, булочка';
+// let res = str.split(',').reverse().join(' ');
+// console.log(res);
+
+// let num = String(12345);
+// let arr = num.split('');
+// let sum = 0;
+// console.log(arr);
+// for (let elem of arr){
+//         sum += +elem;
+//     // console.log(digit);
+// }
+// console.log(sum);
+
+// let num = 12345;
+// let arr = String(num).split('');
+
+// let sum = 0;
+// for (let digit of arr) {
+// 	sum += +digit;
+// }
+
+// console.log(sum);
+
+// let num = 12345;
+// let arr = String(num).split('');
+
+// let sum = 0;
+// for (let digit of arr) {
+// 	sum += Number(digit);
+// }
+
+// console.log(sum);
+
+// let num = 12345;
+// let arr = String(num).split('');
+
+// let sum = 0;
+// for (let digit of arr) {
+// 	sum += Number(digit);
+// }
+
+// console.log(sum);
+
+// let num = 12345;
+// let arr = String(num).split('');
+
+// let prod = 1;
+// for (let digit of arr) {
+// 	prod *= digit;
+// }
+
+// console.log(prod);
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!FUNCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// function myName (){
+//     console.log('Dima');
+// }
+// myName();
+
+// function myName (){
+//     for(let i = 1; i <= 100; i++){
+//         console.log(i);
+//     }
+// }
+// myName();
+
+// Сделайте функцию, которая параметром принимает число и выводит в консоль куб этого числа.
+
+// function num(value){
+//     console.log(Math.pow(value,3));
+// }
+
+// num(10);
+
+// Сделайте функцию, которая параметром принимает число и проверяет, положительное это число или отрицательное. 
+// В первом случае пусть функция выводит в консоль текст '+++', а во втором '---'.
+
+// function res(num){
+// if (num >= 0){
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+// }
+
+// res(1);
+// res(-10);
+
+function res(num1, num2,  num3){
+    console.log(num1 + num2 + num3);
 }
-let res = arr.join(' ');
-console.log(res);
+
+res(10,2,3);
