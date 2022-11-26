@@ -3412,8 +3412,190 @@
 // res(1);
 // res(-10);
 
-function res(num1, num2,  num3){
-    console.log(num1 + num2 + num3);
-}
+// function res(num1, num2,  num3){
+//     console.log(num1 + num2 + num3);
+// }
 
-res(10,2,3);
+// res(10,2,3);
+
+// Сделайте функцию func, которая параметром будет принимать 3 числа и выводить в консоль их сумму. Пусть даны 3 переменные с числами:
+
+// let param1 = 1;
+// let param2 = 2;
+// let param3 = 3;
+// С помощью созданной вами функции выведите в консоль сумму значений эти переменных.
+
+// let param1 = 1;
+// let param2 = 2;
+// let param3 = 3;
+// function sum(num, num2, num3){
+//     console.log(num + num2 + num3);
+// }
+// sum(param1,param2,param3);
+
+// function vol(num) {
+// return Math.pow (num, 3);
+// }
+
+// let res = vol(4);
+// console.log(res);
+
+
+// Сделайте функцию, которая параметром принимает число, а возвращает квадратный корень из этого числа. 
+// С помощью этой функции найдите корень числа 3, затем найдите корень числа 4. 
+// Просуммируйте полученные результаты и выведите их в консоль.
+
+// function vol(num){
+//     return Math.sqrt(num);
+// }
+// let value = vol(3);
+// let value2 = vol(4);
+// let res = value + value2;
+// console.log(res);
+
+// function func(num) {
+// 	return num;
+	
+// 	let res = num ** 2;
+// 	return res;
+// }
+
+// console.log( func(3) );
+
+// function func(num) {
+// 	if (num <= 0) {
+// 		return с(num);
+// 	} else {
+// 		return num ** 2;
+// 	}
+// }
+
+// console.log( func(10) );
+// console.log( func(-5) );
+
+// function func(num) {
+// 	if (num <= 0) {
+// 		return Math.abs(num);
+// 	}
+	
+// 	return num ** 2;
+// }
+
+// console.log( func(10) );
+// console.log( func(-5) );
+
+// function func(num) {
+// 	let sum = 0;
+	
+// 	for (let i = 1; i <= num; i++) {
+// 		sum += i;
+		
+// 	}
+//     return sum;
+// }
+
+// console.log( func(5) );
+
+// function func(arr) {
+// 	let sum = 0;
+	
+// 	for (let i = 0; i < arr.length; i++) {
+// 		sum += arr[i];
+		
+// 		// Если сумма больше или равна 10:
+// 		if (sum >= 10) {
+// 			return i + 1; // выходим из цикла и из функции
+// 		}
+// 	}
+// }
+
+// let res = func([1, 2, 3, 4, 5]);
+// console.log(res);
+
+// function func() {
+// 	let sum = 0;
+// 	let i = 1;
+	
+// 	while (true) { // бесконечный цикл
+// 		sum += i;
+		
+// 		if (sum >= 100) {
+// 			return i; // цикл крутится пока не выйдет тут
+// 		}
+		
+// 		i++;
+// 	}
+// }
+
+// console.log( func() );
+
+// Напишите функцию, которая параметром будет принимать число и делить его на 2 столько раз, 
+// пока результат не станет меньше 10. 
+// Пусть функция возвращает количество итераций, которое потребовалось для достижения резуль
+
+// function func(num) {
+//    let res = 0;
+   
+//    while (num >= 10) {
+// 	num = num / 2;
+//     res++;
+// }
+//     return res;
+  
+// } 
+// console.log( func(10) )
+
+// function func(num1, num2) {	
+// 	if (num1 > 0 && num2 > 0) {
+// 		return num1 * num2;
+// 	} else {
+// 		return num1 - num2;
+// 	}
+// }
+
+// console.log(func(0, 4));
+
+// function func(arr) {
+//     for(let elem of arr){
+//         if(elem %2 === 0 ){
+        
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+ 
+//  console.log(func([3, 3, 4]));
+
+// function func(arr) {
+//         for(let elem of arr){
+//             if(elem === elem){ 
+//                 return true;
+//             }
+//         }
+        
+//         return true;
+//     }
+     
+//      console.log(func([5, 6, 4]));
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// function func(a, b) {
+// 	return a == b;
+// }
+// console.log(func(4, 4));
+
+// function func(a, b) {
+// 	return (a != b);
+// }
+
+// console.log(func(4, 3));
+
+// function func(a, b) {
+// 	return (a + b >= 10);
+// }
+
+// function func(num) {
+// 	return (num >= 0);
+// }
+// console.log(func(4));
