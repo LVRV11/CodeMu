@@ -3840,5 +3840,54 @@
 
 // console.log(changeLetter(str));
 
+// Сделайте функцию, заполняющую массив целыми числами от 1 до заданного.
+
+// function getArr(num){
+//     let arr = [];
+//     for(let i = 1; i <= num; i++){
+//         arr.push(i);
+//     }
+//     return arr;
+// }
+// console.log(getArr(10));
+
+// Сделайте функцию, которая будет возвращать случайный элемент из массива.
+
+// function getElemArr(arr){
+//     let rand = Math.floor(Math.random() * arr.length);
+//         return arr[rand];
+//     }
+    
+// let arr = [77, 2, 3, 5, 88, 70]
+// console.log(getElemArr(arr));
+
+// Сделайте функцию, которая параметром будет принимать число и проверять, простое оно или нет.
+// function chekPrime(num) {
+//     for (let i = 2; i <= num; i++) { // Для всех i...
+//         for (let j = 2; j < i; j++) { // проверить, делится ли число..
+//           if (i % j == 0){
+//             return (false); 
+//           } else {
+//             return (true);
+//           }
+//         }   
+// }
+// }
+// console.log(chekPrime(9));
+
+// function isSimple(num) {
+//       for (let i = 2; i < num; i++) {
+//            if(num % i == 0) {
+//                 return false;   
+//             }  
+//         }  
+//         return true; 
+//     }
+
+//     console.log(isSimple(3));
+
+// Сделайте функцию, которая будет проверять пару чисел на дружественность. 
+// Дружественные числа - два числа, для которых сумма всех собственных делителей первого числа равна 
+// второму числу и наоборот, сумма всех собственных делителей второго числа равна первому числу.
 
 
