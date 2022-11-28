@@ -3599,3 +3599,246 @@
 // 	return (num >= 0);
 // }
 // console.log(func(4));
+
+// function calc(arr) {
+// 	let res = 0;
+	
+// 	for (let elem of arr) {
+// 		res += elem;
+// 	}
+	
+// 	return res / arr.length;
+// }
+
+// console.log(calc([3, 5, 13]));
+
+// function calc(arr1, arr2) {
+// 	let res1 = 0;
+	
+// 	for (let elem of arr1) {
+// 		res1 += elem;
+// 	}
+	
+// 	let res2 = 0;
+	
+// 	for (let elem of arr2) {
+// 		res2 += elem;
+// 	}
+	
+// 	return res1 / res2;
+// }
+
+// console.log(calc([3, 5, 13],[7, 1, 2]));
+
+// function getResult(arr) {
+// 	let res = 1;
+	
+// 	for (let elem of arr) {
+// 		res *= elem;
+// 	}
+	
+// 	return res;
+// }
+
+// console.log(getResult([3, 5]));
+
+// function func1() {
+// 	console.log(3);
+//     return (3);
+// }
+// function func2() {
+// 	console.log(5);
+//     return (5);
+// }
+
+// console.log(func1() + func2());
+
+// function sum(arr) {
+// 	let res = 0;
+	
+// 	for (let elem of arr) {
+// 		res += elem;
+// 	}
+//     return res;
+// }
+
+// console.log(sum([1, 2, 3, 4, 5]));
+
+// let arr = [1, 2, 3, 4, 5];
+
+// function func(arr) {
+// 	let res = 0;
+	
+// 	for (let elem of arr) {
+// 		res += elem;
+// 	}
+//     // console.log(res);
+// 	return res;
+// }
+
+// console.log(func(arr));
+
+// function func1() {
+// 	return 3;
+// }
+// function func2() {
+// 	return 5;
+// }
+
+// console.log( func1() + func2() );
+
+// let arr = [1, 2, 3, 4, 5];
+
+// function getSum(arr) {
+// 	let sum = 0;
+	
+// 	for (let elem of arr) {
+// 		sum += elem;
+// 	}
+	
+// 	return sum;
+// }
+// console.log(getSum(arr));
+
+// let arr = [1, 2, 3, 4, 5];
+// console.log(arr);
+
+// function getSum(arr) {
+// 	let sum = 0;
+	
+// 	for (let elem of arr) {
+// 		sum += elem;
+// 	}
+//     return sum;
+// }
+
+// console.log(getSum(arr));
+
+// Функция добавляет ноль к числу от 1 до 9, а числа больше 9 возвращает без изменений:
+
+// function add(num) {
+// 	if (num <= 9) {
+// 		return '0' + num;
+// 	} else {
+//         return num;
+//     }
+// }
+// console.log(add(11));
+
+// let arr = [1, 2, 3, 4, 5];
+
+// function getSum(arr) {
+// 	let res = 0;
+	
+// 	for (let elem of arr) {
+// 		res += elem;
+// 	}
+// 	return res;
+// }
+
+// console.log(getSum(arr));
+
+// let num = 12345;
+// let arr = String(num).split('');
+// console.log(arr);
+
+
+// function getDigitsSum(arr){
+// 	let sum = 0;
+	
+// 	for (let elem of arr) {
+// 		sum += +elem;
+// 	}
+	
+// 	return sum;
+// }
+
+// console.log(getDigitsSum(arr));
+
+// Код должен проверить число на то, что оно является простым:
+// console.log(isPrime(13)); // должен вывести true
+
+// function isPrime(num) {
+// 	for (let i = 2; i <= num; i++) {
+// 		if (num % i !== 0) {
+// 			return true;
+// 		} else {
+// 			return false;
+// 		}
+// 	}
+// }
+
+// Сделайте функцию, которая параметром будет принимать массив и возвращать сумму его элементов.
+// let arr = [1, 2, 3, 4, 5];
+// function getSum(arr) {
+//     let sum = 0;
+//     for(let elem of arr){
+//     sum += elem;
+//     }
+//     return sum;
+// }
+// console.log(getSum(arr));
+
+// Сделайте функцию, которая параметром будет принимать число и возвращать массив его делителей.
+
+
+// function getDivider(num){
+//     let res = [];
+//    for(let i = 1; i <= num; i++){
+//     if (num%i == 0) {
+//         res.push(i);
+//     }
+//    }
+//    return res;
+// }
+// console.log(getDivider(20));
+
+// function func(num) {
+//    let res = 0;
+   
+//    while (num >= 10) {
+// 	num = num / 2;
+//     res++;
+// }
+//     return res;
+  
+// } 
+// console.log( func(10) )
+
+// // Сделайте функцию, которая параметром будет принимать строку и возвращать массив ее символов.
+// function getSybol(str) {
+//     let arrSymbol = str.split('');
+//     return arrSymbol;
+// }
+// console.log( getSybol('хлебушек') );
+// console.log( getSybol('булочка') );
+
+// Сделайте функцию, которая параметром будет принимать строку и переворачивать ее символы в обратном порядке.
+// function getValue (str){
+//     let arrValue = str.split('').reverse().join('');
+//     return arrValue;
+// }
+// console.log( getValue('хлеб') );
+
+// Сделайте функцию, которая параметром будет принимать строку и делать заглавной первую букву этой строки.
+// function getLetter(str) {
+//     let newWord = str.slice(0, 1).toUpperCase() + str.slice(1);
+//     return newWord;
+// }
+// console.log( getLetter('хлеб') );
+
+// Сделайте функцию, которая параметром будет принимать строку и делать заглавной первую букву каждого слова этой строки.
+
+// let str = 'картошка огурец привет';
+// function changeLetter(str) {
+//     let arr = str.split(' ');
+//     for(let i = 0; i < arr.length; i++){
+//         arr[i] = arr[i].slice(0,1).toUpperCase() + arr[i].slice(1);
+//     }
+//     return arr.join(' ');
+// }
+
+// console.log(changeLetter(str));
+
+
+
