@@ -3889,5 +3889,144 @@
 // Сделайте функцию, которая будет проверять пару чисел на дружественность. 
 // Дружественные числа - два числа, для которых сумма всех собственных делителей первого числа равна 
 // второму числу и наоборот, сумма всех собственных делителей второго числа равна первому числу.
+// function func(arg) {
+// 	arg = '!';
+// }
+
+// let obj = {a: 1, b: 2, c: 3};
+// func(obj.a);
+// console.log(obj);
+
+// function func(obj) {
+// 	obj = '!';
+// }
+
+// let obj = {a: 1, b: 2, c: 3};
+// func(obj.a);
+// console.log(obj);
+
+// function func(arr) {
+// 	arr.splice(1, 1);
+// }
+
+// let arr = [1, 2, 3];
+// func(arr);
+// console.log(arr);
+
+// function func(arr) {
+// 	arr.slice(1, 1);
+// }
+
+// let arr = [1, 2, 3];
+// func(arr);
+// console.log(arr);
+
+// function func(arr) {
+// 	let newArr = arr;
+// 	newArr[0] = '!';
+// }
+
+// let arr = [1, 2, 3];
+// func(arr);
+// console.log(arr);
+
+// function func() {
+// 	return '!';
+// }
+
+// console.log(func());
+
+// Сделайте функцию func, которая будет возвращать через return какую-либо строку.
+
+// function func() {
+// 	return func;
+// }
+// func = 'рррр'; // затрем переменную func
+// console.log(func);
+
+// Запишите в переменную func число 123, тем самым затерев функцию из этой переменной. 
+// Выведите новое значение переменной func в консоль.
+
+// function func() {
+//     console.log('!');
+// }
+// func();
+//  func = 1213;
+//  console.log(func);
+
+// Сделайте функцию func1, которая будет возвращать через return число 3.
+
+// function func() {
+//     return 3;
+// }
+// let func1 = func;
+
+// console.log(func());
+// console.log(func1());
+
+// function func() {
+//     return (func);
+// }
+// let func1 = func();
+// console.log(func1);
+
+// function func() {
+//     return 3;
+// }
+// let func1 = func;
+// console.log(func1() + func());
+
+// Сделайте безымянную функцию, которая будет возвращать через return число 1. Запишите эту функцию в переменную func1.
+
+// let func1 = function(){
+//     return 1;
+// }
+// func1();
+
+// // Сделайте безымянную функцию, которая будет возвращать через return число 2. Запишите эту функцию в переменную func2.
+// let func2 = function(){
+//     return 2;
+// }
+// func2();
+// // Найдите сумму значений функций func1 и func2. Выведите эту сумму алертом в консоль.
+// console.log(func1() + func2());
 
 
+// Создайте функцию как Function Declaration. Проверьте то, что она будет доступна выше места своего объявления.
+// getNum()
+// function getNum(){
+//     console.log(3);
+// }
+// // Создайте функцию как Function Expression. Проверьте то, что она не будет доступна выше места своего объявления.
+
+// let getNum2 = function(){
+//     console.log(3);
+// }
+// getNum2()
+
+// let test = function func() {
+// 	console.log('!');
+// }
+// test();
+// func();
+// function func() {
+// 	console.log('!');
+// } + console.log('!');
+
+// let arr = [
+// 	function() {console.log('1')},
+// 	function() {console.log('2')},
+// 	function() {console.log('3')},
+// ];
+
+// console.log(arr[0]);
+
+// let arr = [
+// 	function() {console.log('1')},
+// 	function() {console.log('2')},
+// 	function() {console.log('3')},
+// ];
+
+// for (let func of arr) {
+// // 	func(); // вызываем наши функции в цикле
+// }
