@@ -4093,3 +4093,180 @@
 
 //     console.log(obj.func3(arr)); 
 
+// test(
+// 	function() {return 1;}, // первый параметр
+// 	function() {return 2;}  // второй параметр
+// );
+
+// function test(func1, func2) {
+// 	console.log(func1()); // выведет 'function() {return 1;}'
+// 	console.log(func2); // выведет 'function() {return 2;}'
+// }
+
+// Сделайте функцию test, параметрами принимающую 3 функции. Передайте в нее первым параметром функцию, 
+// возвращающую 1, вторым - функцию, возвращающую 2, третьим - функцию, возвращающую 3. 
+// Выведите в консоль сумму результатов функций.
+
+// function test (func1, func2, func3){
+//     console.log(func1()+func2()+func3())
+// };
+// test(function(){return 1},function(){return 2}, function(){return 3} );
+// // 
+// Сделайте 3 функции, объявив их как Function Declaration и дав им имена func1, func2 и func3. 
+// Пусть первая функция возвращает 1, вторая - 2, а третья - 3. Передайте эти функции параметром
+// в функцию test из предыдущей задачи.
+
+// function func1(){
+//     return 1;
+// }
+// function func2(){
+//     return 2;
+// }
+// function func3(){
+//     return 3;
+// }
+
+// function test(func1, func2, func3){
+//         console.log(func1()+func2()+func3())
+//     };
+
+// test(func1, func2, func3);
+
+// let func1 = function() {
+//     return 1;
+// }
+// let func2 = function() {
+//     return 2;
+// }
+// let func3 = function() {
+//     return 3;
+// }
+
+// function test(func1, func2, func3){
+//         console.log(func1()+func2()+func3())
+//     };
+
+// test(func1, func2, func3);
+
+// test(function(num) {
+// 	return Math.pow(num,3);
+// });
+
+// function test(func) {
+// 	console.log(func(3));
+// }
+
+
+// test(function(num) {
+// 	return num * num;
+// });
+
+// function test(func) {
+// 	console.log(func(3));
+// }
+// Скопируйте код моей функции test. Вызовите эту функцию, передав ей параметром анонимную функцию, которая параметром будет принимать число и возвращать его куб.
+
+// №6⊗jsPmFAPFAP
+
+// Переделайте ваш код так, чтобы передаваемая функция была не анонимной, а была определена как Function Declaration с именем func.
+
+// №7⊗jsPmFAPFAP
+
+// Переделайте передаваемую функцию на Function Expression с тем же именем func.
+
+// №8⊗jsPmFAPFAP
+
+// Пусть передаваемая функция теперь принимает два параметра и возвращает их сумму. При вызове передаваемой функции внутри test передайте в передаваемую функцию число 2 и число 3. Выведите алертом результат.
+
+// function test(num, func1, func2) {
+// 	return func1(num) + func2(num);
+// }
+// console.log(test(3, function(num){return num*num}, function(num){return num*num*num}));
+
+// function test(arr, func) {
+//     for(let i = 0; i < arr.length; i++){
+//         arr[i] = func(arr[i]);
+//     }
+//     return arr;
+// }
+// let result = test([1,2,3], function(num){return Math.pow(num,3)});
+// console.log(result);
+
+// let test = function func() {
+// 	console.log(func); // функция выведет свой же исходный код
+// };
+
+// test(); 
+
+// let test = function func() {
+// 	console.log('!'); // выводим '!'
+// 	func(); // вызываем сами себя
+// };
+
+// test();
+
+// function func(num1, num2){
+//     function square(num1){
+//         return num1 * num1;}
+//     function cube(num2) {
+//         return num2 * num2 * num2;    
+//     }
+//     return square(num1) + cube(num2);
+// }
+// console.log(func(2, 3));
+
+
+// function test(num1, num2) {
+// 	function func() {
+// 		console.log(num1 + num2);
+// 	}
+	
+// 	num1 = 2;
+// 	func();
+// }
+
+// test(1, 2)
+ 
+// Сделайте функцию func1, которая будучи вызвана вот так: func1()(), вернет число 1. 
+// Сделайте аналогичную функцию func2, возвращающую число 2. Найдите сумму результатов этих функf
+
+// function func1(num) {
+//     return function(){
+//         return 1;
+//     }
+// }
+// function func2(num) {
+//     return function(){
+//         return 2;
+//     }
+// }
+
+// console.log(func1()() + func2()());
+// Сделайте функцию func, которая будучи вызвана вот так: 
+// func(2)(3)(4)(5)(), вернет массив переданных в параметры чисел.
+
+// let arr = [];
+// function func(num1) {
+// 	return function(num2) {
+//         return function(num3) {
+//             return function(num4){
+//                 return function(){
+//                     return arr.push([num1, num2, num3, num4]);
+//                 }
+                
+//             }		    
+//     	};
+//     }
+// }
+// console.log( func(2)(3)(4)(5)() );
+function test() {
+	let num = 1;
+	
+	return function() {
+		return num;
+	}
+}
+
+let num = 2;
+let func = test();
+console.log(func());
