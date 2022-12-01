@@ -4049,3 +4049,47 @@
 // console.log(arr[0]()+arr[1]()+arr[2]());
 // console.log(arr);
 
+// Сделайте объект с тремя функциями. Пусть первая возвращает через return число 1, 
+// вторая - число 2, третья - число 3. С помощью созданных функций выведите в консоль сумму возвращаемых чисел.
+
+// let obj = {
+// 	func1: function() {return 1},
+// 	func2: function() {return 2},
+// 	func3: function() {return 3},
+// };
+// let sum = 0;
+// for(let key in obj){
+//     sum += obj[key](); 
+// }
+
+
+// console.log(sum); 
+
+// Сделайте объект с тремя функциями, каждая из которых будет принимать параметром массив с числами. 
+// Сделайте так, чтобы первая функция возвращала сумму элементов массива, вторая функция - сумму квадратов, 
+// а третья - сумму кубов.
+// let arr = [1,2,3,4,5];
+// let sum = 0;
+// let obj = {
+//     	func1: function(arr) {
+//             for(let i = 0; i < arr.length; i++){
+//                 sum += arr[i];
+//             }
+//             return sum;
+//         },
+//     	func2: function(arr) {
+//             for(let i = 0; i < arr.length; i++){
+//                 sum += Math.pow(arr[i],2);
+//             }
+//             return sum;
+//         },
+//     	func3: function(arr) {
+//             for(let i = 0; i < arr.length; i++){
+//                 sum += Math.pow(arr[i],3);
+//             }
+//             return sum;
+//         },
+//     };
+
+//     console.log(obj.func3(arr)); 
+
