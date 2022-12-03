@@ -4259,14 +4259,161 @@
 //     }
 // }
 // console.log( func(2)(3)(4)(5)() );
-function test() {
-	let num = 1;
+// function test() {
+// 	let num = 1;
 	
-	return function() {
-		return num;
-	}
-}
+// 	return function() {
+// 		return num;
+// 	}
+// }
 
-let num = 2;
-let func = test();
-console.log(func());
+// let num = 2;
+// let func = test();
+// console.log(func());
+
+// function test() {
+//     let num = 1;
+//     return function () {
+//         console.log(num);
+//         num++
+//     };
+// }
+
+// let func = test();
+// func();
+// func();
+
+// function test() {
+//     let num = 10;
+//     return function () {
+//         console.log(num);
+//         num--;
+//     };
+// }
+
+// let func = test();
+// func();
+// func();
+
+// чтобы отсчет доходил до 0, 
+// а затем каждый последующий вызов функции выводил в консоль сообщение о том, что отсчет окончен.
+
+// function test() {
+//     let num = 4;
+//     return function () {
+//         if (num < 0){
+//             console.log('отсчет окончен');
+//         } else {
+//         console.log(num);
+//         num--;
+//     }
+//     };
+// }
+
+// let func = test();
+// func();
+// func();
+// func();
+// func();
+// func();
+// func();
+// func();
+
+// function func() {
+// 	let num = 0;
+	
+// 	return function() {
+// 		console.log(num);
+// 		num++;
+// 	};
+// }
+
+// func()();
+// func()();
+// func()();
+
+// let counter = 0;
+		
+// function test() {
+// 	return function() {
+// 		console.log(counter);
+// 		counter++;
+// 	};
+// }
+
+// let func = test;
+
+// let func1 = func();
+// let func2 = func();
+// func1();
+// func2();
+// func1();
+// func2();
+
+// function test() {
+// 	let counter = 0;
+	
+// 	return function() {
+// 		return function() {
+// 			console.log(counter);
+// 			counter++;
+// 		};
+// 	};
+// }
+
+// let func = test();
+
+// let func1 = func;
+// let func2 = func;
+// func1();
+// func2();
+// func1();
+// func2();
+
+// let result = (function() {
+// 	return '!';
+// }());
+
+// console.log(result);
+
+// let result = (function() {
+// 	return '!';
+// });
+
+// console.log(result);
+
+// (function() {
+// 	return function() {
+// 		console.log('!');
+//         return function() {
+//             console.log('!');
+// 	}; 
+// };
+    
+// })()()();
+
+// let str = 'str'
+
+// (function() {
+// 	console.log(1);
+// })();
+
+// let func = (function(){
+//     let num = 1;
+//     return function(){
+//         console.log(num);
+// 		num++;
+//     };
+// })();
+
+// func(); //выведет 1
+// func(); //выведет 2
+// func(); //выведет 3
+// func(); //выведет 4
+// func(); 
+
+let result = each([1, 2, 3, 4, 5], function(num) {
+	return num ** 2;
+});
+
+console.log(result);
