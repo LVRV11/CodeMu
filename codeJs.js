@@ -4629,8 +4629,131 @@
 // let result = arr.some(elem => elem > 0);
 // console.log(result);
 
-// Дан массив с числами. Проверьте то, что хотя бы для одного элемента произведение его значения на порядковый номер больше 30.
+// // Дан массив с числами. Проверьте то, что хотя бы для одного элемента произведение его значения на порядковый номер больше 30.
 
-function func(num1, num2, num3) {
-	return num1 + num2 + num3;
-}
+// function func(num1, num2, num3) {
+// 	return num1 + num2 + num3;
+// }
+
+// let arr = [1, 2, 3];
+// func(arr[0], arr[1], arr[2]);
+// // // let arr = [1, 2, 3];
+// // func(...[1, 2, 3]);
+// console.log(func);
+
+// let arr = [1, 2, 3, 4, 5];
+
+// function func(num1, num2, num3, num4, num5) {
+// 	return num1 + num2 + num3 + num4 + num5;
+// }
+
+// let result = func(...arr);
+// console.log(result);
+
+// function func(n1, n2, n3, n4, n5, n6, n7, n8) {
+// 	return (n1 + n2 + n3 + n4) * (n5 + n6 + n7 + n8);
+// }
+
+// console.log( func(1, ...[2, 3, 4], 5, ...[6], ...[7, 8]) );
+
+// let arr = [1, 2, 3, 4, 5]
+// let min = Math.min(...arr);
+// console.log(min);
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+
+// let arr  = ['a', ...arr1, ...arr1, 'b', 'c'];
+// console.log(arr);
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [...arr1];
+
+// console.log(arr2);
+
+// Напишите функцию, которая 
+// будет принимать параметрами произвольное количество чисел и возвращать их среднее арифметическое.
+
+// function func(...nums){
+//     let sum = 0;
+//     for(let num of nums){
+//     sum = (sum + num)/nums.length-1;
+   
+//     }
+//     return sum;
+// }
+// let result = func(2, 2, 5);
+// console.log(result); 
+
+
+
+// Функция, сливающая массивы в один
+// Давайте теперь реализуем функцию merge, параметрами принимающую произвольное количество массивов и сливающую их элементы в один массив.
+
+// Вот пример работы нашей функции:
+
+// let result = merge([1, 2, 3], [4, 5, 6], [7, 8, 9]);
+// console.log(result); // выведет [1, 2, 3, 4, 5, 6, 7, 
+// 	8, 9] 
+// Приступим к реализации. Давайте для начала получим переданные массивы в виде одного двухмерного:
+
+// merge([1, 2, 3], [4, 5, 6], [7, 8, 9]);
+
+// function merge(...arrs){
+// 	console.log(arrs); // выведет  [ [1, 2, 3,] [4, 5, 
+// 		6], [7, 8, 9] ] 
+// }
+// Давайте теперь сольем этот двухмерный массив в одномерный. Используем для этого метод concat и оператор spread:
+
+// let arrs   = [ [1, 2, 3,] [4, 5, 6], [7, 8, 9] ];
+
+// let result = [].concat(...arrs);
+// console.log(result); // выведет [1, 2, 3, 4, 5, 6, 7, 
+// 	8, 9] 
+// Давайте добавим этот код в нашу функцию merge:
+
+// function merge(...arrs) {
+// 	return [].concat(...arrs);
+// }
+
+// let result = merge([1, 2, 3], [4, 5, 6], [7, 8, 9]);
+// console.log(result); // выведет [1, 2, 3, 4, 5, 6, 7, 
+// 	8, 9] 
+// Как вы видите, эта функция также получилась очень лаконичной.
+
+// let arr = ['John', 'Smit', 'development', 'programmer', 2000];
+// let [name, surname, department, position, salary] = arr;
+// console.log(surname);
+
+// function func() {
+// 	return ['John', 'Smit', 'development', 'programmer', 2000];
+// }
+// let [name, surname, department, position, salary] = func();
+// console.log(surname);
+
+// let arr = [2025, 12, 31];
+// let [,, day] = arr;
+
+// console.log(day);   // выведет 31
+
+// В следующем коде части массива записываются в соответствующие переменные:
+
+// let arr = ['John', 'Smit', 'development', 'programmer'];
+
+// let name       = arr[0];
+// let surname    = arr[1];
+// let department = arr[2];
+
+// let position;
+// if (arr[3] !== undefined) {
+// 	position = arr[3];
+// } else {
+// 	position = 'trainee';
+// }
+
+// console.log(position);
+// Переделайте этот код через деструктуризацию согласно изученной теории.
+
+// let arr = ['John', 'Smit', 'development'];
+// let [name, surname, department, position = 'trainee'] = arr;
+// console.log(position);
