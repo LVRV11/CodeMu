@@ -4757,3 +4757,44 @@
 // let arr = ['John', 'Smit', 'development'];
 // let [name, surname, department, position = 'trainee'] = arr;
 // console.log(position);
+
+// function func() {
+// 	return (new Date).getDate();
+// }
+// Давайте укажем эту функцию в качестве значения переменной day:
+
+// let [year, month, day = func()] = arr;
+
+// let obj = {
+// 	month: 12,
+// 	day:   31,
+// };
+
+// let {year:y = 2025, month, day} = obj;
+
+// console.log(y);     // выведет 2025
+// console.log(month); // выведет 1
+// console.log(day);   // выведет 31
+
+// let options = {
+	
+//     width:  400,
+// 	height: 500,
+// };
+
+// // options.color = '';
+// let {color = 'black', width, height} = options;
+// console.log(color); 
+
+// function func([name, surname, department, position, salary]) {
+//     console.log(name);
+// }
+
+// func( ['John', 'Smit', 'development', 'programmer', 2000] );
+
+// function func([name, surname, info]){
+//   console.log(surname);
+// };
+
+// func( ['John', 'Smit', 'development', 'programmer', 2000] );
+
