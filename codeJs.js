@@ -4797,4 +4797,95 @@
 // };
 
 // func( ['John', 'Smit', 'development', 'programmer', 2000] );
+// function func([name, surname, department, position, salary]);
+// console.log(surname);
 
+// function func([name, surname,...info]){
+//     console.log(info);
+// }
+
+// func( ['John', 'Smit', 'development', 'programmer', 2000] );
+
+// function func(employee) {
+// 	let name       = employee[0];
+// 	let surname    = employee[1];
+// 	let department = employee[2];
+	
+// 	let position;
+// 	if (arr[3] !== undefined) {
+// 		position = arr[3];
+// 	} else {
+// 		position = 'джуниор';
+// 	}
+// }
+
+// func( ['John', 'Smit', 'development'] );
+// function func([name, surname, department, position = 'джуниор']){
+//     console.log(position);
+// }
+
+// function func(department = 1, [name, surname], [year, month, day]) {
+//     console.log(department);
+// };
+// // 	let name     = employee[0];
+// // 	let surname  = employee[1];
+	
+// // 	let year  = hired[0];
+// // 	let month = hired[1];
+// // 	let day   = hired[2];
+// // }
+
+// func( 'development', ['John', 'Smit'], [2018, 12, 31] );
+
+// let date = new Date();
+
+// console.log(date.getFullYear()); // год
+// console.log(date.getMonth());    // месяц
+// console.log(date.getDate());     // день
+
+// console.log(date.getHours());    // часы
+// console.log(date.getMinutes());  // минуты
+// console.log(date.getSeconds());  // секунды
+
+// function addZero(num) {
+// 	if (num >= 0 && num <= 9) {
+// 		return '0' + num;
+// 	} else {
+// 		return num;
+// 	}
+// }
+
+// let date = new Date();
+
+// console.log(
+// 	addZero(date.getFullYear()) + '-' + 
+// 	addZero(date.getMonth() + 1) + '-' +
+// 	addZero(date.getDate())
+// );
+// let date = new Date();
+// function addZero(num) {
+// 	if (num >= 0 && num <= 9) {
+// 		return '0' + num;
+// 	} else {
+// 		return num;
+// 	}
+// }
+// console.log(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + addZero(date.getDate()));
+// console.log(addZero(date.getHours()) + ':' + date.getMinutes() + ':' + date.getSeconds());   
+
+
+// let str = '2025-12-31';
+// let arr = str.split('-');
+// let res = arr[2] + '/' + arr[1] + '/' + arr[0];
+
+// console.log(res); // получим строку '31/12/2025'
+// Можно также использовать комбинацию методов split, reverse и join:
+
+// let str = '2025-12-31';
+// let res = str.split('-').reverse().join('/');
+
+// console.log(res); // получим строку '31/12/2025'
+
+// let date = new Date();
+// console.log(date.getDay());
+м
