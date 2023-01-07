@@ -4888,4 +4888,66 @@
 
 // let date = new Date();
 // console.log(date.getDay());
-м
+
+// let number = new Date();
+// let month  = number.getMonth();
+// let months = [
+// 	'янв', 'фев', 'мар', 'апр', 'май', 'июн',
+// 	'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'
+// ];
+
+// console.log(months[month]);
+
+// let date = new Date(1988, 02, 24); // установим 5 ноября 2025 года
+// let day  = date.getDay();
+// let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+
+// console.log(days[day]);
+
+// let date = new Date();
+// console.log(date.getTime());
+
+
+// let date = new Date(2015, 11, 4, 23, 59, 59);
+// console.log(date.getTime());
+
+
+// let now  = new Date(2000, 1, 10);
+// let date = new Date(1988, 3, 1);
+
+// let diff = now.getTime() - date.getTime();
+// console.log(diff);
+
+
+// let now  = new Date(2023, 1, 5);
+// let date = new Date(1988, 2, 24);
+
+// let diff = now.getTime() - date.getTime();
+// console.log(diff / (1000 * 60 * 60 * 24 * 31));
+
+// let now  = new Date(2010, 2, 15);
+// let date = new Date(2000, 2, 1);
+
+// let diff = now - date;  
+// console.log(diff / (1000 * 60 * 60 * 24 * 30.5 * 12));
+
+// let date = new Date(2020, 3, 0);
+// console.log(date.getDate());
+
+// function getLastDayOfMonth(year, month) {
+//     let date = new Date(year, month, 0);
+//     return date.getDate();
+//   }
+
+//   console.log(getLastDayOfMonth(2025, 11));
+
+// function isLeap (year, month){
+// let date = new Date(year, month + 1, 0);
+
+// if (date.getDate() == 29) {
+// 	console.log('високосный');
+// } else {
+// 	console.log('обычный');
+// }
+// };
+// isLeap (1988, 3);
