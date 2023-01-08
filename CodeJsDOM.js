@@ -98,3 +98,86 @@
 // let elem5 = document.querySelector('#elem5');
 // elem5.addEventListener('click', func);
 
+// function func1() {
+// 	console.log('1');
+// }
+
+// function func2() {
+// 	console.log('2');
+// }
+
+// function func3() {
+// 	console.log('3');
+// }
+
+// let elem = document.querySelector('#elem');
+// elem.addEventListener('click', func1);
+// elem.addEventListener('click', func2);
+// elem.addEventListener('click', func3);
+
+// let button = document.querySelector('#button');
+// // button.addEventListener('dblclick', func);
+// button.addEventListener('mouseover', func);
+// button.addEventListener('mouseout', func2);
+
+// function func() {
+//     console.log('xeee');
+// }
+
+// function func2() {
+//     console.log('sssd');
+// }
+
+// Дан абзац и кнопка. По клику на кнопку прочитайте текст абзаца и выведите его в консоль.
+
+// let button = document.querySelector('#button');
+// let par = document.querySelector('#elem');
+// button.addEventListener('click', func);
+
+// function func() {
+//     console.log(par.textContent);
+// }
+
+// Дан абзац и кнопка. По клику на кнопку запишите в абзац новый текст
+
+// let button = document.querySelector('#button');
+// let par = document.querySelector('#elem');
+// button.addEventListener('click', func);
+
+// function func() {
+//     console.log(elem.textContent = 'ХЛЕБ');
+// }
+
+// Даны два абзаца, содержащие своим текстом какие-то числа, и кнопка. 
+// По нажатию на кнопку выведите на экран сумму хранящихся чисел.
+
+// {/* <p id="elem">1</p>
+// <p id="elem2">2</p>
+// <input id="button" type="submit"> */}
+
+// let button = document.querySelector('#button');
+// let par = document.querySelector('#elem');
+// let par2 = document.querySelector('#elem2');
+
+// button.addEventListener('click', func);
+// function func() {
+//         console.log(+elem.textContent + +elem2.textContent);
+//     }
+
+// Даны три абзаца с числами, див, и кнопка. По нажатию на кнопку запишите в текст дива сумму чисел.
+
+// let button = document.querySelector('#button');
+// let par = document.querySelector('#elem');
+// let par2 = document.querySelector('#elem2');
+// let par3 = document.querySelector('#elem3');
+// let tekstDiv = document.querySelector('#user');
+// button.addEventListener('click', func);
+// tekstDiv.textContent = +elem.textContent + +elem2.textContent + +elem3.textContent;
+
+
+// function func() {
+//             console.log(+elem.textContent + +elem2.textContent + +elem3.textContent);
+//         }
+
+
+
