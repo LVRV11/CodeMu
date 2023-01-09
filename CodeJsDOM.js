@@ -179,5 +179,35 @@
 //             console.log(+elem.textContent + +elem2.textContent + +elem3.textContent);
 //         }
 
+// Дан абзац с числом и кнопка. 
+// По нажатию на кнопку прибавьте к значению абзаца единицу и запишите полученное число обратно.
 
+// let button = document.querySelector('#button');
+// let par = document.querySelector('#elem');
+// button.addEventListener('click', func);
+
+
+// function func() {
+//             console.log(elem.textContent = +elem.textContent + 1);
+//         }
+
+// Дан абзац с текстом и кнопка. По нажатию на кнопку запишите в конец текста абзаца восклицательный знак.
+
+// let button = document.querySelector('#button');
+// let par = document.querySelector('#elem');
+// button.addEventListener('click', func);
+
+
+// function func() {
+//             console.log(elem.textContent = elem.textContent + '!');
+//         }
+
+// Дан абзац и кнопка. По клику на кнопку запишите в абзац новый текст так, чтобы он был жирным.
+
+// let button = document.querySelector('#button');
+// let par = document.querySelector('#elem');
+// button.addEventListener('click', func);
+// function func() {
+//             console.log(elem.innerHTML = elem.textContent.bold());
+//         }
 
