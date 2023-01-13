@@ -211,3 +211,87 @@
 //             console.log(elem.innerHTML = elem.textContent.bold());
 //         }
 
+// let button = document.querySelector('#button');
+// let elem = document.querySelector('#elem');
+// button.addEventListener('click', func);
+
+// function func() {
+//             console.log(elem.type = 'submit');
+//         }
+
+// Пусть у вас есть ссылка в виде тега a, кнопка и абзац. 
+// По нажатию на кнопку выведите в абзац содержимое атрибута href ссылки.
+
+// let button1 = document.querySelector('#button1');
+// let text1   = document.querySelector('#text1');
+// button1.addEventListener('click', function () {
+// text1.innerHTML = '(' + link.href + ')'
+// });
+
+// let button1 = document.querySelector('#button1');
+// let text1   = document.querySelector('#text1');
+// // let img = document.querySelector('#images/foto1.jpg')
+
+// button1.addEventListener('click', function () {
+//     text1.innerHTML = src.img
+//     });
+
+// let button1 = document.querySelector('#button1');
+// let elem = document.querySelector('#elem');
+// let elem2 = document.querySelector('#elem2');
+// // elem2.value = elem.value*elem.value;
+// console.log(elem.value);
+// button1.addEventListener('click', function () {
+//         if (elem2.value = elem.value){
+//             elem.value = elem2.value;
+            
+//         };
+//         });
+
+        // Даны два инпута и кнопка. В первый инпут пользователем вводится число. 
+        // По нажатию на кнопку запишите во второй инпут квадрат введенного числа.
+
+
+        // let elem = document.querySelector('#elem');
+        // elem.addEventListener('focus', function() {
+        //     console.log(elem.value = "");
+        // });
+        // let button1 = document.querySelector('#button1');
+        // let elem = document.querySelector('#elem');
+        // button1.addEventListener('click', function () {
+        //         alert(elem.className)
+        //         });
+        
+// let button1 = document.querySelector('#button1');
+// let elem = document.querySelector('#elem');
+// button1.addEventListener('click', function () {
+//     elem.classList.add('паппа');
+//     console.log(elem.className);
+//             });    
+
+// let button1 = document.querySelector('#button1');
+// let elem = document.querySelector('#elem');
+
+// button1.addEventListener('click', function () {
+//     console.log(elem.classList);
+//                 });
+// console.log(document.querySelector('#image').src);
+// let elem = document.querySelector('#image');
+// console.log(image.src);
+// console.log(image.width);
+// console.log(image.height);
+
+// let elem = document.querySelector('#elem');
+// elem.addEventListener('focus', func);
+// function func() {
+// 	this.value = '1';
+// }
+// elem.addEventListener('blur', func2);
+// function func2() {
+// 	this.value = '2';
+// }
+
+elem.addEventListener('focus', func);
+function func() {
+	this.value = '1';
+}
