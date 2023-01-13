@@ -4,16 +4,28 @@
     
 </head>
 <body>
-    <!-- <div id="user">Tekst</div>
-    <p id="elem">text</p>
-    <p id="elem2">2</p>
-    <p id="elem3">3</p> -->
-    <!-- <a id="link" href="https://www.google.ru">ссылка</a>
-    <input id="button" type="submit"> -->
+    <!-- <div id="user">Tekst</div> -->
+    <input id="elem" value="1">
+    <input id="elem" value="2">
+    <input id="elem" value="4">
+    <p id="result">text</p>
+    <input id="button" type="submit">
     <!-- <a id="link" href="https://www.google.ru">ссылка</a> -->
     <!-- <p><img src="images/foto1.jpg" alt="Письма мастера дзен"></p> -->
-    <input id="elem" value="text">
-    <input id="button1" type="submit">
-    <script src="./CodeJsDOM.js"></script>
+    <!-- <script src="./CodeJsDOM.js"></script> -->
+    <script>
+    let elems = document.querySelectorAll('#elem');
+    let button = document.querySelector('#button')
+    let par = document.querySelector('#result')
+    button.addEventListener('click', func);
+     function func (){
+        let sum = 0;
+        for (let i = 0; i < elems.length; i++){
+            sum += +elems[i].value;
+        }
+        par.innerHTML = sum; 
+        console.log(par.innerHTML) ; 
+    };
+    </script>
 </body>
 </html>

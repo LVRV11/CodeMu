@@ -291,7 +291,67 @@
 // 	this.value = '2';
 // }
 
-elem.addEventListener('focus', func);
-function func() {
-	this.value = '1';
-}
+// let button1 = document.querySelector('#button1');
+// button1.addEventListener('click', func);
+// function func() {
+// 	this.value = +this.value + 1;
+// }
+
+// let elem = document.querySelector('#elem');
+//         let elem2 = document.querySelector('#elem2');
+//         let elem3 = document.querySelector('#elem3');
+//         let elem4 = document.querySelector('#elem4');
+//         let elem5 = document.querySelector('#elem5');
+// elem.addEventListener('click', func);
+// elem2.addEventListener('click', func);
+// elem3.addEventListener('click', func);
+// elem4.addEventListener('click', func);
+// elem5.addEventListener('click', func);
+
+// function func() {
+//     this.innerHTML = this.innerHTML + '!';
+
+// let elem = document.querySelector('#elem');
+//         let elem2 = document.querySelector('#elem2');
+//         let elem3 = document.querySelector('#elem3');
+// elem.addEventListener('click', func);
+// elem2.addEventListener('click', func);
+// elem3.addEventListener('click', func);
+
+// function func() {
+//     this.value = this.value * this.value;
+// }
+
+// let elems = document.querySelectorAll('#elem');
+//     let button = document.querySelector('#button')
+//     button.addEventListener('click', func);
+
+// function func() {
+//     for(let elem of elems){
+//         elem.textContent = 'text';
+//     }
+// }
+
+// let elems = document.querySelectorAll('#elem');
+//     let button = document.querySelector('#button')
+//     button.addEventListener('click', func);
+//      function func (){
+//         for (let i = 0; i < elems.length; ){
+//             let elem = elems[i++];
+//             elem.innerHTML += i;
+//         }
+        
+//     };
+
+// let elems = document.querySelectorAll('#elem');
+//     let button = document.querySelector('#button')
+//     let par = document.querySelector('#result')
+//     button.addEventListener('click', func);
+//      function func (){
+//         let sum = 0;
+//         for (let i = 0; i < elems.length; i++){
+//             sum += +elems[i].value;
+//         }
+//         par.innerHTML = sum; 
+//         console.log(par.innerHTML) ; 
+//     };
