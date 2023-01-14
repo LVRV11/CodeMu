@@ -355,3 +355,37 @@
 //         par.innerHTML = sum; 
 //         console.log(par.innerHTML) ; 
 //     };
+
+// let elems = document.querySelectorAll('#elem');
+//     for(let elem of elems){
+//         elem.addEventListener('blur', func);
+//     }
+ 
+//     function func() {
+// 	this.value = Number(this.value) + 1;
+// }
+
+// let elems = document.querySelectorAll('#elem');
+//     for(let elems of elem){
+//         elems.addEventListener('blur', func);
+//     }
+ 
+//     function func() {
+// 	this.value = Number(this.value) + 1;
+// }
+
+// let elem = document.querySelectorAll('#elem');
+//     for (var i = 0; i < elem.length; i++) {
+// 	elem[i].addEventListener('click', func);
+// }
+// function func() {
+// 	this.innerHTML = this.innerHTML * this.innerHTML;
+// } 
+
+// let divs = document.querySelectorAll('div');
+
+// for (let div of divs) {
+// 	div.addEventListener('click', function (){
+//         this.textContent++;
+//     });
+// }

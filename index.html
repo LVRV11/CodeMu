@@ -5,27 +5,25 @@
 </head>
 <body>
     <!-- <div id="user">Tekst</div> -->
-    <input id="elem" value="1">
-    <input id="elem" value="2">
-    <input id="elem" value="4">
-    <p id="result">text</p>
-    <input id="button" type="submit">
+    <!-- <input id="elem" value="1"> -->
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <!-- <input id="button" type="submit"> -->
     <!-- <a id="link" href="https://www.google.ru">ссылка</a> -->
     <!-- <p><img src="images/foto1.jpg" alt="Письма мастера дзен"></p> -->
     <!-- <script src="./CodeJsDOM.js"></script> -->
     <script>
-    let elems = document.querySelectorAll('#elem');
-    let button = document.querySelector('#button')
-    let par = document.querySelector('#result')
-    button.addEventListener('click', func);
-     function func (){
-        let sum = 0;
-        for (let i = 0; i < elems.length; i++){
-            sum += +elems[i].value;
-        }
-        par.innerHTML = sum; 
-        console.log(par.innerHTML) ; 
-    };
+        // let button = document.querySelector('#button')
+        let divs = document.querySelectorAll('div');
+
+for (let div of divs) {
+	div.addEventListener('click', function (){
+        this.textContent++;
+    });
+}
     </script>
 </body>
 </html>
