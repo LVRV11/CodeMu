@@ -4,26 +4,50 @@
     
 </head>
 <body>
-    <!-- <div id="user">Tekst</div> -->
-    <!-- <input id="elem" value="1"> -->
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <!-- <input id="button" type="submit"> -->
-    <!-- <a id="link" href="https://www.google.ru">ссылка</a> -->
-    <!-- <p><img src="images/foto1.jpg" alt="Письма мастера дзен"></p> -->
-    <!-- <script src="./CodeJsDOM.js"></script> -->
+    <ul>
+        <li>2000</li>
+        <li>2004</li>
+        <li>2021</li>
+        <li>2022</li>
+        <li>2025</li>
+        <li>2031</li>
+    </ul>
     <script>
-        // let button = document.querySelector('#button')
-        let divs = document.querySelectorAll('div');
-
-for (let div of divs) {
-	div.addEventListener('click', function (){
-        this.textContent++;
-    });
+        
+let arrYears = document.querySelectorAll("li");
+let total = 0;
+for (let elem of arrYears) {
+  let year = elem.innerHTML;
+  let sumNumbers = 0;
+  for (let i = 0; i < year.length; i++) {
+    sumNumbers += +year[i];
+  }
+  if (sumNumbers === 6) {
+    total += +year;
+  }
 }
+
+console.log(total);
+// console.log(sum);
+// let num = 12345;
+// let arr = String(num).split('');
+// console.log(arr);
+
+
+// function getDigitsSum(arr){
+// 	let sum = 0;
+	
+// 	for (let elem of arr) {
+// 		sum += +elem;
+// 	}
+	
+// 	return sum;
+// }
+// console.log(getDigitsSum(arr));
+
+  
     </script>
 </body>
 </html>
+<!-- Получите года, сумма цифр которых равна 6. Найдите сумму полученных годов. -->
+

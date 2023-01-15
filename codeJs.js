@@ -3874,7 +3874,7 @@
 // // }
 // // }
 // // console.log(chekPrime(9));
-
+сумма
 // // function isSimple(num) {
 // //       for (let i = 2; i < num; i++) {
 // //            if(num % i == 0) {
