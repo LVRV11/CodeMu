@@ -389,3 +389,97 @@
 //         this.textContent++;
 //     });
 // }
+
+// let button = document.querySelector('#button');
+//         let link = document.querySelector('#link');
+// 	    button.addEventListener('click', func);
+//         function func (){
+//         link.innerHTML = '(' + link.href + ')';
+//         button.removeEventListener('click', func);
+//     };
+
+// let button = document.querySelector('#button');
+//         button.addEventListener('click', func);
+//         function func (){
+//             button.value++;
+//             if(button.value == 10){
+//                 this.removeEventListener('click', func);
+//             }
+//         }
+
+// let elems = document.querySelectorAll('p');
+// for(let elem of elems){
+//     elem.addEventListener('click', func)
+// }
+
+// function func(){
+//     this.textContent = this.textContent + '!';
+//     this.removeEventListener('click', func);
+// }
+
+// let elems = document.querySelectorAll('li');
+
+//         for(let elem of elems){
+//             elem.addEventListener('click', function func (){
+//                 this.textContent++;
+//                 this.removeEventListener('click', func);
+//             })
+//         }
+
+// let elems = document.querySelectorAll('li');
+// for(let elem of elems){
+//     elem.addEventListener('click', function func (){
+//         this.textContent++;
+//         if(this.textContent == 10){
+//             this.removeEventListener('click', func);
+//         }
+//     })
+// }
+
+// let elem = document.querySelector('#elem');
+//         let value = elem.getAttribute('value');
+//         console.log(value);
+
+// let elem = document.querySelector('#elem');
+// let getClass = elem.getAttribute('class');
+// console.log(getClass);
+
+getAttribute
+setAttribute
+removeAttribute
+hasAttribute
+
+classList
+classList.remove
+classList.add
+classList.toggle
+classList.contains
+
+// let elem = document.querySelector('#elem');
+// let value = elem.setAttribute('value', 'set');
+
+// let elem = document.querySelector('#elem');
+//         let length = elem.classList.length;
+//         console.log(length)
+
+{/* <ul>
+        <li>2000</li>
+        <li>2004</li>
+        <li>2021</li>
+        <li>2022</li>
+        <li>2025</li>
+        <li>2031</li>
+    </ul>
+
+let arrYears = document.querySelectorAll("li");
+let total = 0;
+for (let elem of arrYears) {
+  let year = elem.innerHTML;
+  let sumNumbers = 0;
+  for (let i = 0; i < year.length; i++) {
+    sumNumbers += +year[i];
+  }
+  if (sumNumbers === 6) {
+    total += +year;
+  }
+} */}
