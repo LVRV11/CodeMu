@@ -483,3 +483,172 @@ for (let elem of arrYears) {
     total += +year;
   }
 } */}
+
+ // let elems = document.querySelectorAll('p');
+// for(let elem of elems){
+//     console.log(elem.textContent += '!');
+// }
+
+// let elems = document.querySelectorAll('p');
+
+// for (let elem of elems) {
+// 	elem.addEventListener('click', function() {
+// 		this.textContent = +this.textContent + 1;
+// 	});
+// }
+// // for (let elem of elems) {
+// // 	elem.addEventListener('click', func);
+// //     console.log(elem);
+// //     function func() {
+// // 		this.textContent = +this.textContent + 1;
+// // 	};
+// // }
+
+
+// let button = document.querySelector('button');
+//           let elem   = document.querySelector('p');
+
+// button.addEventListener('click', function() {
+// 	elem.innerHTML = '<b>' + elem.innerHTML + '</b>';
+// });
+
+// let button = document.querySelector('button');
+//           let elems  = document.querySelectorAll('p');
+
+//         button.addEventListener('click', function() {
+// 	    let sum = 0;
+// 	    for (let elem of elems) {
+// 		sum += Number(elem.textContent);
+// 	}
+	
+// 	console.log(sum);
+// });
+
+
+// let elems = document.querySelectorAll('p');
+
+// for (let elem of elems) {
+// 	elem.addEventListener('click', function func (){
+// 		this.textContent += '!';
+// 	});
+// }
+
+// let button = document.querySelector('button');
+// let elems  = document.querySelectorAll('p');
+
+// button.addEventListener('click', () => {
+// 	for (let elem of elems) {
+// 		elem.innerHTML = '<b>' + elem.innerHTML + '</b>';
+// 	}
+// });
+
+// let button = document.querySelector('button');
+//     let elems  = document.querySelectorAll('p');
+
+//     let sum = 0;
+// 	button.addEventListener('click', func);
+//     function func(){
+    
+//     for (let elem of elems) {
+// 	sum += +elem.textContent;
+// 		// console.log(sum);
+//     }
+//     console.log(sum);
+// };
+
+// let button = document.querySelector('button');  
+//     let elems  = document.querySelectorAll('input');
+//     let sum = 0;
+
+//     button.addEventListener('click', func);
+//     function func(){
+//     for (let elem of elems) {
+// 	sum += +elem.value;
+// }
+// console.log(sum);
+// }
+
+// let button = document.querySelector('button');  
+//     let elems  = document.querySelectorAll('input');
+//     let sum = 0;
+
+//     button.addEventListener('click', () => {
+//         for (let elem of elems) {
+//         sum += +elem.value;
+//     }
+//     console.log(sum);
+//     });
+
+// let btn  = document.querySelector('#btn');
+//     let inp1 = document.querySelector('#inp1');
+//     let inp2 = document.querySelector('#inp2');
+//     let inp3 = document.querySelector('#inp3');
+
+//     btn.addEventListener('click', function() {
+//         inp3.value = +inp1.value + +inp2.value;
+//         console.log(inp3.value);
+//     });
+
+// let btn  = document.querySelector('#btn');
+//     let res  = document.querySelector('#res');
+//     let inp1 = document.querySelector('#inp1');
+//     let inp2 = document.querySelector('#inp2');
+
+//     btn.addEventListener('click', function() {
+//         res.textContent = +inp1.value + +inp2.value;
+//     });
+
+//     let elem = document.querySelector('#elem');
+//    elem.addEventListener('click', () => {
+//     elem.textContent = elem.textContent + elem.dataset.text;
+//     console.log(elem.textContent);
+//    })
+//    Сделайте так, чтобы по клику на див в конец его текста добавилось содержимое его атрибута data-text.
+
+// let blocks = document.querySelectorAll('div');
+//    for (let block of blocks) {
+// block.addEventListener('click', function() {
+// this.textContent+= this.dataset.num;
+// });
+// }
+
+// let button = document.querySelector('#btn');
+//    let button2 = document.querySelector('#btn2');
+//    let sumClick = 0;
+// button.addEventListener('click', function() {
+// button.value = + button.value + 1;
+// button.textContent = button.value;
+// button.dataset.count = button.value;
+// console.log(button.value);
+// console.log(button.dataset.count);
+// });
+// button2.addEventListener('click', function(){
+//     button2.textContent = button.dataset.count;
+// });
+
+// let msg = document.querySelector('#elem');
+// msg.addEventListener('blur', func);
+// function func(){
+//     if (msg.value.length == msg.dataset.length){
+//     console.log(msg.value);
+//     } else {
+//         alert('vvedite 5 знаков');
+//     };
+    
+//     }
+
+// let msg = document.querySelector('#elem');
+// msg.addEventListener('blur', () => {
+//     if (msg.value.length >= msg.dataset.min && msg.value.length <= msg.dataset.max){
+//         console.log('ok');
+//     } else {
+//         alert ('vvedite');
+//     }
+// });
+
+// let price = document.querySelector('#elem');
+// price.addEventListener('click', () => {
+//     price.textContent += price.dataset.productPrice*price.dataset.productAmount;
+//     console.log(price.textContent);
+// })
+
