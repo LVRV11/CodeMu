@@ -652,3 +652,276 @@ for (let elem of arrYears) {
 //     console.log(price.textContent);
 // })
 
+// let products = document.querySelectorAll('p');
+// for (let i = 0; i < products.length;){
+//     let product = products[i++];
+//     product.setAttribute('data-num', [i]);
+//     console.log(product);
+// }
+// let inputs = document.querySelectorAll('input')
+// let button = document.querySelector('#btn')
+
+// button.addEventListener('click',function() {
+// 	for (let input of inputs) {
+// 		if (input.value === input.dataset.text) {
+// 			input.classList.add('right');
+// 		} else {
+// 			input.classList.add('wrong');
+// 		}
+        
+// 	}
+//     console.log(inputs);
+// });
+
+// let inputs = document.querySelectorAll('input');
+// let btn = document.querySelector('#btn');
+// let sum = 0;
+
+// btn.addEventListener('click', function() {
+// 	for (let input of inputs) {
+// 		sum += +input.value;
+
+// 	}
+	
+// 	console.log(sum);
+// });
+
+// let btn  = document.querySelector('#btn');
+// let inp1 = document.querySelector('#inp1');
+// let inp2 = document.querySelector('#inp2');
+// let inp3 = document.querySelector('#inp3');
+
+// btn.addEventListener('click', function() {
+//     let sum  = +inp1.value + +inp2.value;
+// 	inp3.value = sum;
+// });
+
+let inp = document.querySelector('#inp');
+    inp.addEventListener('blur', function() {
+    let sum = 0;
+	let str = inp.value;
+    let arr = str.split('');
+    // console.log(str);
+	for(let i = 0; i < arr.length; i++){
+        sum += +arr[i];
+    }
+	console.log(sum);
+});
+
+let inputValue = document.querySelector('input');
+    let pValue = document.querySelector('p');
+    inputValue.addEventListener('blur', () => {
+        pValue.textContent = pValue.textContent + ' ' + inputValue.value;
+        console.log(pValue.textContent);
+    })
+
+    let input = document.querySelectorAll('input');
+    let pValue = document.querySelector('p');
+    let button = document.querySelector('button');
+    let sum = 0;
+    button.addEventListener('click', () => {
+     for(let elem of input){
+        sum += +elem.value;
+        pValue.textContent = sum;
+     }
+    })
+
+    let input = document.querySelector('input');
+    input.addEventListener('focus', () => {
+        let sum = 0;
+        let str = input.value;
+        let arr = str.split('');
+        for(let i = 0; i < arr.length; i++){
+            sum += +arr[i];
+     }
+     console.log(sum);
+    })
+
+    let input = document.querySelector('input');
+    input.addEventListener('focus', () => {
+        let sum = 0;
+        let str = input.value;
+        let arr = str.split(',');
+        
+        for(let i = 0; i < arr.length; i++){
+            sum += +arr[i] / arr.length;
+     }
+     console.log(sum);
+    });
+
+    let elem = document.getElementById('input');
+    //     input.addEventListener('focus', func);
+    //     input.addEventListener('blur', func2);
+    
+    //     function func() {
+    // 	elem.placeholder = '';
+    // }
+    // function func2() {
+    // 	let elem = document.getElementById('input');
+    // 	let elems = document.querySelectorAll('.name');
+    // 	if (elem.value !== 0) {
+    // 		let str = elem.value;
+    // 		let arr = str.split(' ');
+    // 		for (let i = 0; i < arr.length; i++) {
+    // 			elems[i].value = arr[i];
+    // 		}
+    // 	}
+    // 	if (elem.value == 0) {
+    // 		elem.placeholder = 'Введите Ваши ФИО';
+    // 		for (let i = 0; i < elems.length; i++) {
+    // 			elems[i].value = '';
+    // 		}
+    // 	}
+    //        let elem = document.getElementById('input');
+    //        let elems = document.querySelectorAll('.name');
+    //        input.addEventListener('blur', func);
+    //        function func(){
+    //             let str = elem.value;
+    //             let arr = str.split(' ');
+    //             for(let i = 0; i < arr.length; i++){
+    //                 elems[i].value = arr[i];
+    //             }
+    //        }
+
+    //        let input = document.querySelector('input');
+    // input.addEventListener('blur', () =>{
+    //     let str = input.value;
+    //     let arr = str.split(' ');
+    //     for(let i = 0; i < arr.length; i++){
+    //         arr[i] = arr[i].slice(0,1).toUpperCase() + arr[i].slice(1); 
+    //         let res = arr.join(' ');
+    //         input.value = res;
+    //     }
+    //     console.log(input.value);
+    // })
+
+//     let input = document.querySelector('input');
+//         input.addEventListener('blur', () =>{
+//         let str = input.value;
+//         let arr = str.split(' ');
+//         input.length = arr.length;
+//         alert(arr.length);
+//         console.log(input.length);
+//     });
+
+//     let input = document.querySelector('input');
+//         input.addEventListener('blur', () =>{
+//             let arr2 = [];
+//             let str = input.value;
+//             let arr = str.split('.');
+//             arr2 = arr.reverse();
+//             let str1 = arr2.join('-');
+// 	elem.value = str1;
+//     });
+
+//     function func() {
+//         let str = elem.value;
+//          let arr = str.split('');
+//         let arr2 = str.split('').reverse();
+//         for(let i = 0; i < arr.length; i++) {
+//             if(arr[i]!== arr2[i]) { 
+//                 alert('это слово не палиндром');
+//                 return;
+//             }
+//           }
+//         alert('это слово палиндром');
+//         return;
+//     }
+
+//     let elem = document.querySelector('#num');
+
+// elem.addEventListener('blur', func);
+
+// function func() {
+// 	let str = elem.value;
+//  	let arr = str.split('');
+// 	// let arr2 = str.split('').reverse();
+// 	for(let i = 0; i < arr.length; i++) {
+// 		if(arr[i] == 3) { 
+// 			alert('содержит 3');
+// 			return;
+// 		}
+//   	}
+// 	alert('не содержит 3');
+// 	return;
+// }
+
+// let elems = document.querySelectorAll('p');
+// let button = document.querySelector('button');
+// button.addEventListener('click', func);
+// function func(){
+//     for(let i = 0; i < elems.length; i++){
+//         elems[i].textContent = elems[i].textContent + [i + 1];
+//     }
+// }
+
+// let input = document.querySelector('input');
+//        let button = document.querySelector('button')
+//        let button2 = document.querySelector('#rock')
+//        console.log(input.disabled);
+//        button.addEventListener('click', ()=> {
+//         input.disabled = false;
+//         console.log(input.disabled);
+//        })
+//        button2.addEventListener('click', ()=>{
+//         input.disabled = true;
+//         console.log(input.disabled);
+//        })
+      
+
+//        let input = document.querySelector('input');
+//        let button = document.querySelector('button')
+//        let button2 = document.querySelector('#num')
+//        button.addEventListener('click', ()=>{
+//     input.checked = true;
+//        })
+// button2.addEventListener('click', ()=>{
+//         input.checked = false;
+// });
+
+// let input = document.querySelector('input');
+//        let button = document.querySelector('button')
+//        let text = document.querySelector('p')
+//        button.addEventListener('click', ()=>{
+//    if(input.checked){
+//     text.textContent = 'hi'
+//    }else{
+//     text.textContent = 'poka'
+//    }
+// });
+
+// let elem   = document.querySelector('#elem');
+// let button = document.querySelector('#button');
+// button.addEventListener('click', function() {
+// 	if (elem.disabled) {
+// 		elem.disabled = false;
+// 	} else {
+// 		elem.disabled = true;
+// 	}
+// });
+
+// let elem   = document.querySelector('#elem');
+// let button = document.querySelector('#button');
+// button.addEventListener('click', function() {
+// 	elem.disabled = !elem.disabled;
+// });
+
+// let radios = document.querySelectorAll('input[type="radio"]');
+//         let button = document.querySelector('button');
+//         let p = document.querySelector('p');
+//         button.addEventListener('click', ()=>{
+//             for(let radio of radios){
+//                 if(radio.checked == true){
+//                     p.textContent = radio.value;
+//                 }
+//             }
+//         })
+    
+
+let elem = document.querySelector('#elem');
+
+elem.addEventListener('input', function() {
+	if(elem.value.length > 5){
+        elem.style.color = 'red';
+    };
+});
