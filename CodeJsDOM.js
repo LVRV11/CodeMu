@@ -925,3 +925,41 @@ elem.addEventListener('input', function() {
         elem.style.color = 'red';
     };
 });
+
+let elem = document.querySelector('#elem');
+        let p = document.querySelector('p');
+       elem.addEventListener('input', ()=>{
+        if(elem.value.length > 5){
+        p.textContent = elem.value.length - 5;
+        }
+
+       })
+
+       let elem   = document.querySelector('#elem');
+       let elemTwo   = document.querySelector('#elemtwo');
+       elem.addEventListener('input', ()=>{
+        if(elem.value.length == 2){
+            elemTwo.focus();
+            if(elemTwo.value.length == 2){
+                elemTwo.blur();
+            }
+        }
+    });
+
+    let select = document.querySelector('#select');
+      let p = document.querySelector('p');
+      let button = document.querySelector('button');
+      select.addEventListener('change', ()=>{
+        button.addEventListener('click', ()=>{
+        p.textContent = select.value;
+})
+      })
+
+      let select = document.querySelector('#select');
+      select.addEventListener('change', ()=>{
+        if(select.value % 4 === 0){
+            console.log('visokosnii god');
+        } else {
+            console.log('obichnii');
+        }
+      })
