@@ -1,0 +1,4 @@
+#block:not(.active) {
+	display: none;
+}
+

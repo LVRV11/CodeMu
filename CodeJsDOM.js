@@ -918,48 +918,178 @@ let inputValue = document.querySelector('input');
 //         })
     
 
-let elem = document.querySelector('#elem');
+// let elem = document.querySelector('#elem');
 
-elem.addEventListener('input', function() {
-	if(elem.value.length > 5){
-        elem.style.color = 'red';
-    };
+// elem.addEventListener('input', function() {
+// 	if(elem.value.length > 5){
+//         elem.style.color = 'red';
+//     };
+// });
+
+// let elem = document.querySelector('#elem');
+//         let p = document.querySelector('p');
+//        elem.addEventListener('input', ()=>{
+//         if(elem.value.length > 5){
+//         p.textContent = elem.value.length - 5;
+//         }
+
+//        })
+
+//        let elem   = document.querySelector('#elem');
+//        let elemTwo   = document.querySelector('#elemtwo');
+//        elem.addEventListener('input', ()=>{
+//         if(elem.value.length == 2){
+//             elemTwo.focus();
+//             if(elemTwo.value.length == 2){
+//                 elemTwo.blur();
+//             }
+//         }
+//     });
+
+//     let select = document.querySelector('#select');
+//       let p = document.querySelector('p');
+//       let button = document.querySelector('button');
+//       select.addEventListener('change', ()=>{
+//         button.addEventListener('click', ()=>{
+//         p.textContent = select.value;
+// })
+//       })
+
+//       let select = document.querySelector('#select');
+//       select.addEventListener('change', ()=>{
+//         if(select.value % 4 === 0){
+//             console.log('visokosnii god');
+//         } else {
+//             console.log('obichnii');
+//         }
+//       })
+
+//       let workDays = document.querySelector('#select');
+// workDays.addEventListener('change', ()=>{
+//     if(workDays.value > 1 && workDays.value < 7){
+//         console.log('worj day');
+//     } else {
+//         console.log('weekand');
+//     }
+// })
+
+
+// let month = document.querySelector('select');
+// let button = document.querySelector('button');
+// button.addEventListener('click', ()=>{
+//     month.value = '1';
+// });
+
+// let checkbox = document.querySelector('input');
+// let button = document.querySelector('button');
+// let div = document.querySelector('div');
+// console.log(checkbox.checked);
+
+// button.addEventListener('click', function() {
+// 	if (checkbox.checked) {
+// 		div.textContent = '111';
+//         console.log(div.value);
+// 	} else {
+// 		div.textContent = '222';
+// 	}
+// });
+
+// let checkbox = document.querySelector('input');
+// console.log(checkbox)
+// let button = document.querySelector('button');
+// console.log(button)
+
+// button.addEventListener('click', function() {
+// 	if (checkbox.checked == true) {
+// 		console.log('+++');
+// 	} else {
+// 		console.log('---');
+// 	}
+// });
+
+// <div id="elem">0 : 0</div>
+// let elem = document.getElementById('elem');
+
+// document.addEventListener('mousemove', function(event) {
+// 	elem.innerHTML = event.clientX + ' : ' + event.clientY;
+// });
+
+// let elem = document.querySelector('#elem');
+
+// elem.addEventListener('click', func);
+// elem.addEventListener('dblclick', func);
+
+// function func(event) {
+// 	if(event.type == 'click'){
+//         elem.style.borderColor = "green";
+//     } if (event.type == 'dblclick'){
+//         elem.style.borderColor = "red";
+//     }
+//     }
+
+//     let elem = document.querySelector('input');
+// let p = document.querySelector('p');
+// elem.addEventListener('keypress', function (event){
+//     if(event.code == 'Enter'){
+//     p.textContent = elem.value;
+//     console.log(p.textContent);
+//     console.log(event.key);
+//     console.log(event.code);
+//     }
+// })
+
+
+{/* <button id="elem">text</button>
+ 
+ let elem = document.querySelector('#elem');
+  
+ elem.addEventListener('click', function (event) {
+ if(event.altKey) {
+ elem.style.cssText = 'background-color: red';
+ }
+ });
+
+ let elem = document.querySelector('#elem');
+  
+ elem.addEventListener('click', function (event) {
+    elem.textContent = elem.textContent + 'href';
+    event.preventDefault();
+	console.log('Вы не можете перейти по этой ссылке!');
 });
 
-let elem = document.querySelector('#elem');
-        let p = document.querySelector('p');
-       elem.addEventListener('input', ()=>{
-        if(elem.value.length > 5){
-        p.textContent = elem.value.length - 5;
-        }
+let nameFag = document.querySelector('.nameFag')
+ let name = document.querySelector('.name');
+ let p = document.querySelector('p') ;
+ let elem = document.querySelector('#elem')
+ elem.addEventListener('click', function (event) {
+  p.textContent = +nameFag.value + +name.value
+  event.preventDefault();
+});
 
-       })
 
-       let elem   = document.querySelector('#elem');
-       let elemTwo   = document.querySelector('#elemtwo');
-       elem.addEventListener('input', ()=>{
-        if(elem.value.length == 2){
-            elemTwo.focus();
-            if(elemTwo.value.length == 2){
-                elemTwo.blur();
-            }
-        }
-    });
+let div = document.querySelector('div');
+div.addEventListener('click', function(event) {
+	if (event.target.tagName === 'DIV') {
+		console.log('клик именно по диву');
+	}
+	if (event.target.tagName === 'UL') {
+		console.log('клик именно по UL');
+	}
+    if (event.target.tagName === 'LI') {
+		console.log('клик именно по LI');
+	}
+}); 
 
-    let select = document.querySelector('#select');
-      let p = document.querySelector('p');
-      let button = document.querySelector('button');
-      select.addEventListener('change', ()=>{
-        button.addEventListener('click', ()=>{
-        p.textContent = select.value;
-})
-      })
-
-      let select = document.querySelector('#select');
-      select.addEventListener('change', ()=>{
-        if(select.value % 4 === 0){
-            console.log('visokosnii god');
-        } else {
-            console.log('obichnii');
-        }
-      })
+let div = document.querySelector('div');
+div.addEventListener('click', function(event) {
+	if (event.target.tagName === 'DIV') {
+		console.log('клик именно по диву');
+	}
+	if (event.target.tagName === 'UL') {
+		console.log('клик именно по UL');
+	}
+    if (event.target.tagName === 'LI') {
+        event.target.innerHTML = event.target.innerHTML + '!';
+		console.log('клик именно по LI');
+	}
+});
