@@ -7,20 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <input id="elem" value="3">
+    <input type="button" id="elem" value="1">
 <script>
+    let elem = document.querySelector('#elem');
 
-let elem = document.querySelector('#elem');
-elem.addEventListener('blur', func);
-
-function func() {
-	alert( this.value = this.value*this.value );
-	
-	function square() {
-		return this.value * this.value;
-	}
-}
-
+    elem.addEventListener('click', function() {
+        let self = this;
+	setInterval(function() {
+		self.value = Number(elem.value) + 1;
+	}, 1000);
+});
+   
 </script>
 </body>
 </html>

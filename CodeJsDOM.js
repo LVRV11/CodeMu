@@ -1093,3 +1093,85 @@ div.addEventListener('click', function(event) {
 		console.log('клик именно по LI');
 	}
 });
+
+function time(){
+    console.log('Прошло 3 секунды');
+}
+setInterval(time, 3000);
+
+let num = 100;
+setInterval(()=>{console.log(num--)}, 1000);
+
+let num = 10;
+let timerId = setInterval(()=>{
+    console.log(num--);
+
+    if(num == -1){
+        clearInterval(timerId);
+    }   
+}, 1000)
+
+et start = document.querySelector('#start');
+    start.addEventListener('click', ()=>{
+        let num = 100;
+        setInterval(()=>{
+            console.log(num--);
+        }, 1000)
+    })
+
+     let start = document.querySelector('#start');
+    start.addEventListener('click', function func () {
+let num = 100;
+ setInterval(function () {
+    console.log(num--);
+ }, 1000)
+ this.removeEventListener('click', func);
+    }) 
+
+    let num = 100;
+   let start = document.querySelector('#start');
+    let stop  = document.querySelector('#stop');
+    let timerId;
+    start.addEventListener('click', function (){
+        timerId = setInterval(function (){
+            console.log(num--);
+        }, 1000)
+         });
+
+         stop.addEventListener('click', function() {
+	clearInterval(timerId);
+});
+let start = document.querySelector('#start');
+    let stop  = document.querySelector('#stop');
+    let timerId;
+    start.addEventListener('click', function() {
+	timerId = setInterval(function() {
+		let date = new Date;
+		console.log(date.getMinutes() + ' ' + date.getSeconds());
+	}, 1000);
+});
+
+stop.addEventListener('click', function() {
+	clearInterval(timerId);
+});
+
+let elem = document.querySelector('#elem');
+    let  timerId;
+    timerId = setInterval(function() {
+	elem.value = Number(elem.value) - 1;
+    if (elem.value < 1){
+    clearInterval(timerId);
+    }
+}, 1000);
+
+ let elem = document.querySelector('#elem');
+
+    elem.addEventListener('click', function() {
+        let self = this;
+	setInterval(function() {
+		self.value = Number(elem.value) + 1;
+	}, 1000);
+});
+   
+
+
