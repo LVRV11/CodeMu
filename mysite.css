@@ -1,4 +1,9 @@
-#block:not(.active) {
+/* #block:not(.active) {
 	display: none;
-}
+} */
 
+#clock{
+    color: #000000;
+ font-weight: bold;
+  font-size: 20px;
+}

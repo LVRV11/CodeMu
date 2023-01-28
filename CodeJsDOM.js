@@ -1173,5 +1173,124 @@ let elem = document.querySelector('#elem');
 	}, 1000);
 });
    
+Дана кнопка. Дан абзац, текстом которого является число. По нажатию на кнопку запустите таймер, 
+который каждую секунду будет увеличивать текст абзаца на 1.
+ let button = document.querySelector('button');
+    let timer = document.querySelector('p');
+    button.addEventListener('click', function () {
+        setInterval(function () {
+            timer.textContent = Number(timer.textContent) + 1;
+        }, 1000)
+    });
 
+    Дана кнопка. Дан абзац, текстом которого является число, например, 10. 
+    По нажатию на кнопку запустите таймер, который каждую секунду будет уменьшать текст абзаца на 1. 
+    Как только значение абзаца станет равно нулю - остановите таймер.
+
+    let button = document.querySelector('button');
+    let timer = document.querySelector('p');
+    let timerId;
+    button.addEventListener('click', function () {
+            timerId = setInterval(function () {
+            timer.textContent = Number(timer.textContent) - 1;
+            if (timer.textContent == 0){
+            clearInterval(timerId);
+            }
+        }, 1000)
+    });
+
+    let elem = document.querySelector('#elem');
+    elem.addEventListener('blur', function (){
+        setInterval(function (){
+            elem.value = elem.value * elem.value;
+        }, 1000);
+    })
+    
+    Дан инпут. В него вводится число. По потери фокуса сделайте так, чтобы в абзаце ниже начал 
+    тикать обратный отсчет, начиная с введенного числа. Когда отсчет дойдет до нуля - 
+    он должен закончится.
+
+    let elem = document.querySelector('#elem');
+let timer = document.querySelector('p');
+let timerId;
+elem.addEventListener('blur', function () {
+    timer.textContent = Number(elem.value);
+timerId = setInterval(function () {
+    timer.textContent = Number(timer.textContent) - 1;
+console.log(timer.textContent);
+if (timer.textContent == 0){
+    clearInterval(timerId);
+}
+}, 1000);
+});
+
+let elem = document.querySelector('#elem');
+let button = document.querySelector('button');
+let p = document.querySelector('p');
+let timerId;
+
+button.addEventListener('click', function () {
+    p.textContent = Number(elem.value);
+    console.log(p.textContent);
+    timerId = setInterval (function (){
+        p.textContent = Number(p.textContent) - 1;
+        if (p.textContent == 0){
+            clearInterval(timerId);
+        }
+    }, 1000);
+})
+
+Дан абзац и две кнопки. Сделайте так, чтобы по нажатию на первую кнопку в абзаце начал тикать 
+таймер от 1 до бесконечности, а по нажатию на вторую таймер останавливался.
+
+<button id="start">start</button>
+<button id="stop">stop</button>
+
+let start = document.querySelector('#start');
+    let stop = document.querySelector('#stop');
+    let timer = document.querySelector('p');
+    let timerId;
+
+    start.addEventListener('click', func);
+    function func(){
+        timerId = setInterval(function(){
+            timer.textContent ++;
+        }, 1000);
+    }
+
+    stop.addEventListener('click', function (){
+        clearInterval(timerId);
+    })
+
+
+    let elem = document.querySelector('p');
+elem.style.color = 'red';
+setInterval (func, 1000);
+function func () {
+    if(elem.style.color == 'red'){
+        elem.style.color = 'green';
+ } else {
+    elem.style.color = 'red';
+ }
+}
+
+let elem = document.querySelector('div');
+setInterval(function(){
+    let now = new Date();
+    elem.innerHTML = now.toLocaleTimeString();
+ }, 1000);
+
+
+ let elem = document.querySelector('ol');
+let li = document.createElement('li');
+li.textContent = 'item';
+elem.appendChild(li);
+
+let ol = document.querySelector('ol');
+let button = document.querySelector('button');
+let li = document.createElement('li');
+li.textContent = 'item';
+button.addEventListener('click', ()=> {
+    ol.appendChild(li)
+});
 
