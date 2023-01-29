@@ -1294,3 +1294,128 @@ button.addEventListener('click', ()=> {
     ol.appendChild(li)
 });
 
+Дан ol и кнопка. Сделайте так, чтобы по клику на кнопку в конец ol добавлялся тег li. 
+Сделайте так, чтобы по клику на любой из добавленных li в конец его текста записывался восклицательный знак.
+
+
+let ol = document.querySelector('ol');
+let button = document.querySelector('button');
+
+
+button.addEventListener('click', function (){
+    let li = document.createElement('li');
+    ol.appendChild(li);
+    li.addEventListener('click', function (){
+    li.textContent = li.textContent + '!';
+})
+})
+
+ let ol = document.querySelector('ol');
+     
+    for(let i = 1; i <=10; i++){
+        let li = document.createElement('li');
+        li.textContent = li.textContent + [i];
+
+        ol.appendChild(li);
+    }
+
+
+     let parent = document.querySelector('div');
+    let p = document.querySelector('p');
+    
+     for(let i = 1; i <= 5; i++){
+    let input = document.createElement('input');
+    
+    input.addEventListener('blur', function (){
+      p.textContent = input.value;
+    });
+    parent.appendChild(input);
+     }
+
+
+     let li = document.querySelectorAll('li');
+            for (let elem of li){
+                elem.addEventListener('click', function(){
+                    elem.remove();
+                })
+            }
+
+
+
+            let ul = document.querySelector('#parent')
+            let button = document.querySelector('#button');
+            button.addEventListener('click', function (){
+                ul.lastChild.remove();
+            });   
+            
+             let ul = document.querySelector('ul');
+            let li1 = document.createElement('li');
+            li1.textContent = 'start';
+            let li2 = document.createElement('li');
+            li2.textContent = 'finish';
+            ul.prepend(li1);
+            ul.append(li2);
+
+<ul id="parent">
+        <li>text</li>
+        <li>text</li>
+        <li id="elem">text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+    <input type="submit" id="button">
+<script>
+            let ul = document.querySelector('#parent');
+            let elem = document.querySelector('#elem');
+
+            let li = document.createElement('li');
+            li.textContent = 'new';
+
+            ul.insertBefore(li, elem);
+
+<ul id="parent">
+        <li>text</li>
+        <li>text</li>
+        <li id="elem">text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+    <input type="submit" id="button">
+<script>
+            let ul = document.querySelector('#parent');
+            let elem = document.querySelector('#elem');
+
+            let li = document.createElement('li');
+            li.textContent = 'new';
+
+            li.addEventListener('click', ()=>{
+                li.textContent = li.textContent + '!';
+            })
+
+            ul.insertBefore(li, elem);
+            
+  <div id="elem" style="border: 1px solid red;">
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+    </div>
+    <input type="submit" id="button">
+<script>
+            let elem = document.querySelector('#elem');
+            let p = document.createElement('p');
+            p.textContent = '!';
+
+            elem.insertAdjacentElement('beforeBegin', p);
+            
+            
+            <div id="elem" style="border: 1px solid red;">
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+    </div>
+<script>
+            let elem = document.querySelector('#elem');
+
+            elem.insertAdjacentHTML('beforeBegin', '<div class="www"><p>text</p><p>text</p><input></div>');
+
+            
