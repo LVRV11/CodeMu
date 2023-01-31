@@ -1442,3 +1442,134 @@ let parent = document.querySelector('#parent');
     parent.appendChild(p);
             }
             
+ <ul id="elem"></ul>
+  
+<script>
+            let parent = document.querySelector('#elem');
+            // let li = document.querySelector('li');
+            let arr = [1, 2, 3, 4, 5];
+
+
+            for(let elem of arr){
+            let li = document.createElement('li');
+            li.textContent = elem;
+            parent.appendChild(li);
+            }
+            
+            
+<ul id="elem"></ul>
+  
+<script>
+            let parent = document.querySelector('#elem');
+            let arr = [1, 2, 3, 4, 5];
+    
+            for(let elem of arr){
+            let li = document.createElement('li');
+            li.textContent = elem;
+            parent.appendChild(li);
+
+            li.addEventListener('click', func);
+                function func (){
+                    console.log(li.textContent + "!");
+                    li.removeEventListener('click', func)
+                }
+                
+            }
+                    let table = document.querySelector('#table');
+            for(let i = 0; i < 5; i++) {
+                let tr = document.createElement('tr');
+                for(let j = 0; j < 5; j++){
+                    let td = document.createElement('td');
+                    table.appendChild(td);                
+                }
+                table.appendChild(tr);
+            }
+           
+    <table id="table"></table>
+  
+<script>
+            let table = document.querySelector('#table');
+            for(let i = 0; i < 5; i++) {
+                let tr = document.createElement('tr');
+                for(let i = 0; i < 5; i++){
+                    let td = document.createElement('td');
+                    tr.appendChild(td);                
+                }
+                table.appendChild(tr);
+            }
+            console.log(table);
+            
+    y>
+    <table id="table"></table>
+  <input id="first">
+  <input id="second">
+<script>
+     function generateTable(width, height) {
+  const table = [];
+  for (let i = 0; i < height; i++) {
+    const row = [];
+    for (let j = 0; j < width; j++) {
+      row.push("_");
+    }
+    table.push(row);
+  }
+  return table;
+}
+
+const width = parseInt(prompt("Enter table width: "));
+const height = parseInt(prompt("Enter table height: "));
+const table = generateTable(width, height);
+
+for (const row of table) {
+  console.log(row.join(" "));
+}
+console.log(generateTable)
+
+
+<table id="table"></table>
+  <input id="first">
+  <input id="second">
+<script>
+     function generateTable(width, height) {
+  const table = [];
+  for (let i = 0; i < height; i++) {
+    const row = [];
+    for (let j = 0; j < width; j++) {
+      row.push("_");
+    }
+    table.push(row);
+  }
+  return table;
+  
+}
+
+const width = document.querySelector('first');
+const height = document.querySelector('second')
+const table = generateTable(width, height);
+
+for (const row of table) {
+  console.log(row.join(" "));
+}
+console.log(table)
+
+
+<table id="table"></table>
+  
+<script>
+     let table = document.querySelector('#table');
+     let k = 1;
+     for(let i = 0; i < 5; i ++){
+        let tr = document.createElement('tr');
+
+        for(let i = 0; i < 10; i++){
+            let td = document.createElement('td');
+            td.textContent = k;
+            k++;
+            if(k%2 !== 0){
+                table.appendChild(td);
+            }
+            
+        }
+        table.appendChild(tr);
+     }
+     console.log(table);
