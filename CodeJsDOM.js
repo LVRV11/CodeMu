@@ -1418,4 +1418,27 @@ button.addEventListener('click', function (){
 
             elem.insertAdjacentHTML('beforeBegin', '<div class="www"><p>text</p><p>text</p><input></div>');
 
+      <div id="elem1">
+    <p id="elem2"></p>
+    </div>
+<script>
+            let elem1 = document.querySelector('#elem1');
+            let elem2 = document.querySelector('#elem2');
+
+            let contains = elem1.contains(elem2);
+            console.log(contains);  
+            
+</script>
+
+
+let parent = document.querySelector('#parent');
+            // let p = document.querySelector('p');
+            let arr = [1, 2, 3, 4, 5];
+
+
+            for(let elem of arr){
+    let p = document.createElement('p');
+    p.textContent = elem + 1;
+    parent.appendChild(p);
+            }
             

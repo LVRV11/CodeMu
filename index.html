@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="mysite.css">
+    
 </head>
 <body>
-    <div id="elem1">
-    <p id="elem2"></p>
+    <div id="parent"></div>
+    
     </div>
 <script>
-            let elem1 = document.querySelector('#elem1');
-            let elem2 = document.querySelector('#elem2');
-            
-          
+            let parent = document.querySelector('#parent');
+            // let p = document.querySelector('p');
+            let arr = [1, 2, 3, 4, 5];
+
+
+            for(let elem of arr){
+    let p = document.createElement('p');
+    p.textContent = elem + 1;
+    parent.appendChild(p);
+            }
             
 </script>
 </body>
