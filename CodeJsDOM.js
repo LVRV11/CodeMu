@@ -1626,3 +1626,52 @@ for (let user of employees) {
     table.appendChild(tr);
 
     }
+
+
+    body>
+    <ul id="parent">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    
+    <input type="submit" id="button">
+<script>
+
+let button = document.getElementById('button');
+let parent = document.getElementById('parent');
+
+button.addEventListener('click', function (){
+let li = document.createElement('li');
+li.textContent = 'a';
+li.addEventListener('click', function (){
+    li.remove()
+});
+parent.appendChild(li);
+});
+
+  <div id="parent">
+        <p id="elem">text</p>
+        <a href="" id="remove">remove</a>
+    </div>
+<script>  
+let elem = document.querySelector('#elem');
+let remove = document.querySelector('#remove');
+
+remove.addEventListener('click', function (event){
+elem.remove();
+event.preventDefault();
+})
+
+
+let elem = document.querySelector('#elem');
+let show = document.querySelector('#show');
+let hide = document.querySelector('#hide');
+
+hide.addEventListener('click', function() {
+	elem.classList.add('hidden');
+});
+
+show.addEventListener('click', function() {
+	elem.classList.remove('hidden');
+});
