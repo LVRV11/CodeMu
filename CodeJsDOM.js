@@ -1675,3 +1675,16 @@ hide.addEventListener('click', function() {
 show.addEventListener('click', function() {
 	elem.classList.remove('hidden');
 });
+
+<p id="elem1"></p>
+	<p id="elem2"></p>	
+	<link rel="stylesheet" href="mysite.css" type="text/css"/>
+
+<script>
+function setText(id, text) {
+	let elem = document.getElementById(id);
+	elem.textContent = text;
+}
+
+setText('elem1', 'text1');
+setText('elem2', 'text2');

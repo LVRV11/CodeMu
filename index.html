@@ -4,22 +4,20 @@
     
 </head>
 <body>
-	<p id="elem">text</p>
-	<input type="submit" id="show" value="show">
-	<input type="submit" id="hide" value="hide">
+	<div id="elem1"></div>
+	<div id="elem2"></div>
 	<link rel="stylesheet" href="mysite.css" type="text/css"/>
 
 <script>
-let elem = document.querySelector('#elem');
-let show = document.querySelector('#show');
-let hide = document.querySelector('#hide');
+let div1 = document.querySelector('#elem1');
+createTable(3, 4, div1);
 
-hide.addEventListener('click', function() {
-	elem.classList.add('hidden');
-});
+let div2 = document.querySelector('#elem2');
+createTable(5, 6, div2);
+function createTable(rows, cols, parent) {
+	let table = document.createElement('table');
+} 
 
-show.addEventListener('click', function() {
-	elem.classList.remove('hidden');
-});
 </script>
 </body>
+
