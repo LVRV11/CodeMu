@@ -1,17 +1,30 @@
-/* #block:not(.active) {
-	display: none;
-} */
-
-/* .hidden {
-	display: none;
-} */
-
-/* .active {
-	background: red;
-} */
-
-td {
-	width: 50px;
-	height: 50px;
-	border: 1px solid black;
+/* p {
+	font-size: 30px;
+	line-height: 45px;
+	text-align: justify;
+	width: 400px;
 }
+
+p {
+	font-family: Arial;
+	font-size: 40px;
+	font-weight: bold;
+	text-indent: 50px;
+	font-style: italic;
+	line-height: 60px;
+}
+p {
+	font: bold Italic 40px/60px/50px Arial
+
+} */
+/* курсив жирность размер_шрифта / межстрочный_интервал семейство */
+
+/* p {
+	font-family: Arial;
+	font-size: 40px;
+	font-weight: bold;
+	text-indent: 50px;
+	font-style: italic;
+	line-height: 60px;
+} */
+

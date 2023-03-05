@@ -1688,3 +1688,18 @@ function setText(id, text) {
 
 setText('elem1', 'text1');
 setText('elem2', 'text2');
+
+<a href="https://code.mu/ru/markup/book/prime/html/links/">ссылка</a>
+	
+	<ul>
+		<li>
+			<a href="index2.HTML">ссылка на index2</a>
+		</li>
+	</ul>
+	<img src="images/foto5.jpg" width="300px">
+
+
+    Times New Roman (стоит по умолчанию), Arial, Georgia, Verdana, Trebuchet MS, Impact, Arial Black, Comic Sans MS, Courier New.
+
+
+    text-indent
