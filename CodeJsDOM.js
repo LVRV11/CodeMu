@@ -1703,3 +1703,24 @@ setText('elem2', 'text2');
 
 
     text-indent
+
+    let str = 'ahb acb aeb aeeb adcb axeb';
+		let newStr = /a.b/g;
+		let newmach = str.match(newStr);
+		console.log(newmach);
+
+        	let str = 'aba aca aea abba adca abea';
+		let newStr = /a..a/g;
+		let newmach = str.match(newStr);
+		console.log(newmach);
+
+        let str = 'aa aba abba abbba abca abea';
+		let res = str.replace(/ab+a/g, '!');
+		console.log(res);
+
+        let str = 'ab abab abab abababab abea';
+_________________________________________________________________________________
+        let str = 'a.a aba aea';
+		let res = str.replace(/a\.a/g , '!');
+		console.log(res);
+________________________________________________________________________________
